@@ -1,0 +1,289 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+secrets.*
+credentials.*
+
+# Project artifacts
+01-introduction/ai_engineering/briefs/*.md
+!01-introduction/ai_engineering/briefs/.gitkeep
+01-introduction/python_software_engineering/queue_report.json
+06_project/.env
+**/*.executed.ipynb
+**/*_executed.ipynb
+**/.ipynb_checkpoints/
+**/.pytest_cache/
+**/__pycache__/
+**/.coverage
+**/.coverage.*
+**/htmlcov/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.venv/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Logs
+*.log
+*.log.*
+
+# Databases
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+# .python-version
+
+# pipenv
+#Pipfile.lock
+
+# UV
+#uv.lock
+
+# poetry
+#poetry.lock
+#poetry.toml
+
+# pdm
+#pdm.lock
+#pdm.toml
+.pdm-python
+.pdm-build/
+
+# pixi
+#pixi.lock
+.pixi
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Claude / Claude Code
+.claude/
+.claude-code/
+.claude_code/
+CLAUDE.local.md
+CLAUDE.md.local
+CLAUDE*.tmp
+CLAUDE*.log
+
+# Codex
+.codex/
+.codexrc
+.codex-cache/
+.codex_home/
+codex_tmp/
+codex_logs/
+
+# Other AI assistants / editors
+.aider*
+.aider/
+.cursor/
+.continue/
+.windsurf/
+.codeium/
+.tabnine/
+.github/copilot-instructions.local.md
+*.prompt-cache
+*.llmtrace
+*.agentlog
+agent_runs/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#.idea/
+
+# Abstra
+.abstra/
+
+# Visual Studio Code
+.vscode/
+
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+
+# Cursor
+.cursorignore
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific - Notebooks and testing
+test_notebooks.py
+test_all_notebooks.sh
+fix_notebooks.py
+/tmp/test*.ipynb
+/tmp/*test*.log
+notebook_test_*.log
+NOTEBOOKS_STATUS.txt
+
+# API Keys and sensitive data
+*_API_KEY*
+*api_key*
+*api-key*
+.openai
+openai_key*
+
+# Binary data files (ChromaDB HNSW indexes, model weights, etc.)
+*.bin
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.pt
+*.pth
+*.safetensors
+
+# Vector DB persistence directories
+chroma_persist_demo/
+faiss_persist_demo/
+chroma_db/
+faiss_index/
+02-vector_data_bases/batman_vector_db_orchestration/outputs/
+
+# ML / experiment tracking artifacts
+mlruns/
+mlartifacts/
+mlflow.db
+wandb/
+lightning_logs/
+tensorboard/
+runs/
+ray_results/
+dvc.lock.local
+.dvc/tmp/
+.dvc/cache/
