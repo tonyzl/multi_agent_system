@@ -1,0 +1,375 @@
+[
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "¿Cuántos días de vacaciones tengo disponibles y cómo los solicito?",
+    "answer": "Puedes ver tu saldo de días de vacaciones disponibles ingresando a Workday > Mi Tiempo > Balance de Ausencias. El saldo se actualiza en tiempo real después de cada aprobación.\n\nPara solicitar tus vacaciones, debes ingresar a Workday > Tiempo y Ausencias > Solicitar Vacaciones. Selecciona las fechas que deseas, agrega una nota si es necesario y envía la solicitud para aprobación de tu manager. Recuerda que tu manager tiene 3 días hábiles para aprobar o solicitar un cambio de fechas. Además, asegúrate de solicitar tus vacaciones con al menos 15 días de anticipación. Si deseas tomar un período mayor a 10 días hábiles, la anticipación mínima es de 30 días.",
+    "confidence_score": 0.663,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a días de vacaciones, que es un tema de Recursos Humanos."
+    },
+    "expected_domain": "hr",
+    "category": "vacaciones",
+    "chunks_used_ids": [
+      3,
+      36,
+      35,
+      37
+    ]
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "¿Cómo puedo conectarme a la VPN desde casa?",
+    "answer": "Para conectarte a la VPN desde casa, sigue estos pasos:\n\n1. **Descarga el cliente de Cisco AnyConnect** desde el enlace: [it.techcorp.com/vpn](http://it.techcorp.com/vpn).\n2. **Instala el cliente** siguiendo las instrucciones del asistente de instalación.\n3. **Configura el servidor** ingresando la dirección: `vpn.techcorp.com`.\n4. **Autentica** con tus credenciales de Google y asegúrate de tener el código de 2FA más reciente (recuerda que expira cada 30 segundos).\n5. **Conéctate** a la VPN.\n\nSi encuentras algún problema durante el proceso, consulta la sección de troubleshooting para problemas comunes de conexión a la VPN. Si después de seguir estos pasos no puedes conectarte, abre un ticket en Jira con captura del error o contacta al soporte a través de Slack en el canal #it-support.",
+    "confidence_score": 0.5116,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un acceso a un sistema tecnológico específico, en este caso, la VPN."
+    },
+    "expected_domain": "tech",
+    "category": "vpn_acceso",
+    "chunks_used_ids": [
+      34,
+      16,
+      3,
+      35
+    ]
+  },
+  {
+    "domain": "finance",
+    "agent": "Agente de Finanzas",
+    "question": "¿Cuál es el límite de gasto para una comida de negocios con un cliente?",
+    "answer": "El límite de gasto para una comida de negocios con un cliente es de USD 150 por persona por evento. Es importante documentar el nombre del cliente y la oportunidad comercial relacionada.",
+    "confidence_score": 0.6229,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "finance",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un límite de gasto, lo cual está relacionado con Finanzas y Administración."
+    },
+    "expected_domain": "finance",
+    "category": "gastos_entretenimiento",
+    "chunks_used_ids": [
+      38,
+      55,
+      54,
+      53
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "¿Qué beneficios de salud ofrece la empresa para mi familia?",
+    "answer": "TechCorp ofrece un seguro médico privado que cubre al colaborador y a su grupo familiar, que incluye a su cónyuge e hijos hasta 25 años. Además, el seguro médico incluye cobertura dental y de visión. Si necesitas más información específica sobre la cobertura, te sugiero contactar directamente a RRHH.",
+    "confidence_score": 0.5353,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a beneficios de salud, que son parte de Recursos Humanos."
+    },
+    "expected_domain": "hr",
+    "category": "beneficios",
+    "chunks_used_ids": [
+      6,
+      33,
+      32,
+      7
+    ]
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "La laptop está muy lenta y el fan hace ruido. ¿Qué hago?",
+    "answer": "Para solucionar el problema de lentitud en tu laptop y el ruido del ventilador, sigue estos pasos:\n\n1. **Abre el Monitor de Actividad** (Activity Monitor):\n   - Verifica si hay procesos que están utilizando un alto porcentaje de CPU o RAM. Cierra aquellos que no sean necesarios.\n\n2. **Comprueba el espacio en disco libre**:\n   - Asegúrate de que tienes al menos un 15% de espacio libre en tu disco. Si no, considera eliminar archivos o aplicaciones que no necesites.\n\n3. **Verifica actualizaciones de macOS**:\n   - Asegúrate de que tu sistema operativo esté actualizado. Ve a \"Preferencias del Sistema\" > \"Actualización de software\".\n\n4. **Reinicia tu equipo**:\n   - Si no has reiniciado tu laptop en más de 3 días, hazlo ahora. Esto puede ayudar a liberar recursos.\n\n5. **Revisa las causas comunes**:\n   - Si tienes muchas pestañas abiertas en Chrome o extensiones, considera usar Arc o Safari como alternativa.\n   - El agente CrowdStrike podría estar realizando un escaneo, lo cual es un proceso temporal.\n   - Si tienes sincronización de Google Drive con muchos archivos, esto puede afectar el rendimiento.\n   - Los procesos de indexación de Spotlight también pueden causar lentitud.\n\nSi después de seguir estos pasos la lentitud persiste, crea un ticket en Jira con la siguiente información:\n- Captura del Monitor de Actividad.\n- Versión de macOS que estás utilizando.\n- Descripción de las aplicaciones que usas habitualmente.\n\nEsto ayudará al equipo de soporte a diagnosticar el problema de manera más efectiva.",
+    "confidence_score": 0.4528,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un problema técnico relacionado con hardware."
+    },
+    "expected_domain": "tech",
+    "category": "troubleshooting_hardware",
+    "chunks_used_ids": [
+      36,
+      37,
+      5,
+      38
+    ]
+  },
+  {
+    "domain": "finance",
+    "agent": "Agente de Finanzas",
+    "question": "¿Cómo solicito el reembolso de un gasto de viaje que hice la semana pasada?",
+    "answer": "Para solicitar el reembolso de un gasto de viaje que realizaste la semana pasada, sigue estos pasos:\n\n1. **Accede a Expensify**: Descarga la app o ingresa a app.expensify.com.\n2. **Crea un nuevo gasto**: Toma una foto del comprobante del gasto o sube el PDF correspondiente.\n3. **Completa la información**: Asegúrate de ingresar todos los detalles necesarios, como la fecha, el monto y la categoría del gasto.\n4. **Envía la solicitud de reembolso**: Una vez que hayas ingresado toda la información, envía la solicitud para su revisión.\n\nRecuerda que si el gasto es mayor a USD 25 y no tienes el comprobante, no podrás ser reembolsado. Si el comprobante se perdió, intenta contactar al proveedor para solicitar un duplicado.",
+    "confidence_score": 0.5475,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "finance",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un proceso de reembolso, que está relacionado con Finanzas y Administración."
+    },
+    "expected_domain": "finance",
+    "category": "reembolso",
+    "chunks_used_ids": [
+      37,
+      55,
+      35,
+      34
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "¿Cuánto tiempo dura el período de prueba para nuevos empleados?",
+    "answer": "El período de prueba para nuevos empleados dura 90 días calendario. Durante este tiempo, recibirás acompañamiento de un buddy o mentor, y se realizarán tres check-ins formales: uno al día 30, otro al día 60 y el último al día 90. Al finalizar, tu gerente directo emitirá una evaluación escrita. Si tienes más preguntas, no dudes en preguntar.",
+    "confidence_score": 0.6086,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a políticas de Recursos Humanos relacionadas con el onboarding de nuevos empleados."
+    },
+    "expected_domain": "hr",
+    "category": "onboarding",
+    "chunks_used_ids": [
+      28,
+      27,
+      29,
+      15
+    ]
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "¿Qué versión de Node.js debo usar y cómo la configuro?",
+    "answer": "Debes usar Node.js 20 LTS (versión LTS actual). Para configurarlo, sigue estos pasos:\n\n1. Asegúrate de tener instalado Node Version Manager (nvm). Si no lo tienes, instálalo primero.\n2. Abre tu terminal.\n3. Ejecuta el siguiente comando para instalar Node.js 20: \n   ```bash\n   nvm install 20\n   ```\n4. Luego, activa la versión instalada con el comando:\n   ```bash\n   nvm use 20\n   ```\n5. Verifica que estás usando la versión correcta ejecutando:\n   ```bash\n   node -v\n   ```\n\nAdemás, revisa el archivo `.nvmrc` en el repositorio que estás utilizando, ya que especifica la versión correcta de Node.js para ese proyecto.",
+    "confidence_score": 0.5147,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a la configuración de software, específicamente Node.js, que es un tema técnico."
+    },
+    "expected_domain": "tech",
+    "category": "desarrollo_software",
+    "chunks_used_ids": [
+      42,
+      11,
+      43,
+      53
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "Necesito contratar a un freelancer para un proyecto. ¿Cuál es el proceso?",
+    "answer": "Lamentablemente, la información sobre la contratación de freelancers no está incluida en el contexto proporcionado. Te sugiero que contactes directamente al departamento de Recursos Humanos para obtener orientación específica sobre este proceso. Ellos podrán brindarte la información necesaria y guiarte adecuadamente.",
+    "confidence_score": 0.4324,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere al proceso de contratación, que es un tema de Recursos Humanos."
+    },
+    "expected_domain": "finance",
+    "category": "proveedores",
+    "chunks_used_ids": [
+      14,
+      27,
+      15,
+      10
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "¿Cómo funciona el proceso de evaluación de desempeño anual?",
+    "answer": "El proceso de evaluación de desempeño anual en TechCorp se realiza en diciembre y se lleva a cabo a través de una evaluación completa 360°. Este proceso tiene en cuenta varios criterios que determinan el bono y el ajuste salarial del colaborador. Los criterios de evaluación son los siguientes:\n\n1. **Logro de OKRs:** 40% del puntaje total.\n2. **Competencias técnicas del rol:** 30% del puntaje total.\n3. **Valores y comportamientos culturales:** 20% del puntaje total.\n4. **Colaboración e impacto en el equipo:** 10% del puntaje total.\n\nAdemás, el gerente directo emite una evaluación escrita al finalizar el período. Si la evaluación es satisfactoria, se confirma la contratación definitiva del colaborador.\n\nRecuerda que las revisiones salariales se realizan anualmente en enero, coincidiendo con este ciclo de evaluación de desempeño. Si tienes más preguntas o necesitas más detalles, no dudes en preguntar.",
+    "confidence_score": 0.566,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere al proceso de evaluación de desempeño, que es un tema de Recursos Humanos."
+    },
+    "expected_domain": "hr",
+    "category": "desempeno",
+    "chunks_used_ids": [
+      39,
+      38,
+      31,
+      29
+    ]
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "No tengo acceso al repositorio en GitHub. ¿Qué debo hacer?",
+    "answer": "Para resolver el problema de acceso al repositorio en GitHub, sigue estos pasos:\n\n1. **Verifica tu cuenta**: Asegúrate de que estás utilizando tu cuenta de GitHub corporativa (usuario@techcorp.com).\n\n2. **Solicita acceso**: Contacta al Tech Lead del proyecto a través de Slack y solicita el acceso necesario.\n\n3. **Crea un ticket en Jira**: Si el Tech Lead confirma que debes tener acceso, crea un ticket en Jira en la sección IT > Access Request. Asegúrate de incluir:\n   - El nombre exacto del repositorio.\n   - El nivel de acceso que necesitas (read, write, admin).\n\n**Nota:** Ten en cuenta que el acceso a repositorios de producción y de seguridad requiere aprobación adicional del Director de Ingeniería.",
+    "confidence_score": 0.5143,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un problema de acceso a un sistema específico, en este caso, GitHub."
+    },
+    "expected_domain": "tech",
+    "category": "accesos",
+    "chunks_used_ids": [
+      38,
+      39,
+      9,
+      57
+    ]
+  },
+  {
+    "domain": "finance",
+    "agent": "Agente de Finanzas",
+    "question": "¿Cuál es el proceso para aprobar una factura de un proveedor?",
+    "answer": "El proceso para aprobar una factura de un proveedor es el siguiente:\n\n1. **Envío de la factura:** El proveedor envía la factura a invoices@techcorp.com (no a correos personales).\n2. **Procesamiento automático:** El sistema OCR de SAP procesa la factura automáticamente.\n3. **Alerta de aprobación:** El manager del área correspondiente recibe una alerta para aprobar la factura en un plazo de 3 días hábiles.\n4. **Verificación de matching:** El departamento de Contabilidad verifica que la factura coincida con la orden de compra (PO).\n5. **Proceso de pago:** Una vez aprobada, el pago se procesa según los términos acordados, que son Net 30 estándar.\n\nEs importante seguir este flujo para asegurar que la factura sea aprobada y pagada correctamente.",
+    "confidence_score": 0.6455,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "finance",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere al proceso de aprobación de facturas, que está relacionado con Finanzas y Administración."
+    },
+    "expected_domain": "finance",
+    "category": "cuentas_por_pagar",
+    "chunks_used_ids": [
+      41,
+      64,
+      63,
+      39
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "¿Puedo llevar a mi pareja al plan de seguro médico si no estamos casados?",
+    "answer": "Sí, puedes incluir a tu pareja en el seguro médico sin estar casados. TechCorp reconoce las uniones de hecho. Para hacerlo, debes presentar una declaración de convivencia ante notario y llevarla a RRHH. Ten en cuenta que el trámite tiene un tiempo de procesamiento de 10 días hábiles. Si necesitas más información, no dudes en contactar a RRHH directamente.",
+    "confidence_score": 0.5238,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a beneficios de salud relacionados con Recursos Humanos."
+    },
+    "expected_domain": "hr",
+    "category": "beneficios",
+    "chunks_used_ids": [
+      6,
+      7,
+      37,
+      5
+    ]
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "¿Cuáles son las reglas de seguridad para guardar datos de clientes?",
+    "answer": "Las reglas de seguridad para guardar datos de clientes, que corresponden al nivel L3 (Confidencial), son las siguientes:\n\n1. **Cifrado Obligatorio**: Todos los datos de clientes deben ser cifrados. Esto significa que no se pueden almacenar en texto plano y deben utilizar métodos de cifrado adecuados.\n\n2. **Prohibiciones de Almacenamiento**:\n   - No se pueden almacenar en dispositivos personales.\n   - No se pueden utilizar servicios externos no aprobados.\n   - No se pueden enviar por canales no cifrados.\n\n3. **Acceso Controlado**: El acceso a estos datos debe ser restringido y solo debe ser otorgado a aquellas personas que lo necesiten para realizar su trabajo.\n\nSi sospechas de un incidente de seguridad relacionado con datos de clientes, debes actuar de inmediato y reportarlo a través de los canales adecuados (Slack, Jira, email).",
+    "confidence_score": 0.5048,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a normas de seguridad informática relacionadas con el manejo de datos."
+    },
+    "expected_domain": "tech",
+    "category": "seguridad",
+    "chunks_used_ids": [
+      13,
+      12,
+      61,
+      2
+    ]
+  },
+  {
+    "domain": "unknown",
+    "agent": "Orquestador",
+    "question": "¿Cuál es el clima en Bogotá hoy?",
+    "answer": "Lo siento, tu pregunta no parece estar relacionada con Recursos Humanos, Tecnología o Finanzas. Para consultas generales, puedes contactar a:\n\n- RRHH: hr@techcorp.com | Ext. 2100\n- IT: it-support@techcorp.com | Ext. 3000\n- Finanzas: finance@techcorp.com | Ext. 4000",
+    "confidence_score": 0.0,
+    "routing": {
+      "domain": "unknown",
+      "confidence": 0.9,
+      "reasoning": "La pregunta no está relacionada con Recursos Humanos, Tecnología o Finanzas."
+    },
+    "model_used": null,
+    "expected_domain": "unknown",
+    "category": "fuera_de_dominio",
+    "chunks_used_ids": []
+  },
+  {
+    "domain": "tech",
+    "agent": "Agente de Soporte Técnico",
+    "question": "¿Cómo reporto un incidente de producción urgente?",
+    "answer": "Para reportar un incidente de producción urgente, sigue estos pasos:\n\n1. **Evalúa la severidad del incidente**: Determina si es un P1 (servicio caído para todos los usuarios) o P2 (funcionalidad crítica degradada).\n   \n2. **Notifica a los responsables**:\n   - Si es un P1 o P2, informa inmediatamente al Tech Lead y al Engineering Manager.\n\n3. **Crea un canal de coordinación**:\n   - Establece un canal temporal en Slack con el formato #incident-YYYY-MM-DD para la coordinación del incidente.\n\n4. **Documenta el incidente**:\n   - Registra todos los detalles relevantes en PagerDuty, incluyendo la causa y la solución aplicada una vez que se resuelva.\n\n5. **Mitigación**:\n   - Enfócate en restaurar el servicio lo más rápido posible antes de investigar la causa raíz.\n\n6. **Post-mortem**:\n   - Después de resolver el incidente, realiza un post-mortem blameless si es un P1 o P2, completándolo en un plazo de 48 horas.\n\nRecuerda que la comunicación clara y rápida es clave para manejar incidentes urgentes.",
+    "confidence_score": 0.5854,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "tech",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un incidente relacionado con la producción, lo cual está relacionado con tecnología y soporte."
+    },
+    "expected_domain": "tech",
+    "category": "incident_management",
+    "chunks_used_ids": [
+      46,
+      62,
+      14,
+      63
+    ]
+  },
+  {
+    "domain": "finance",
+    "agent": "Agente de Finanzas",
+    "question": "¿Qué pasa si un proveedor me pide un pago en efectivo para agilizar algo?",
+    "answer": "No se debe realizar ningún pago en efectivo a proveedores. Todos los pagos deben hacerse a través del sistema de cuentas por pagar de TechCorp. Aceptar pagos en efectivo puede generar riesgos legales y contables. Si el proveedor insiste en un pago en efectivo, es recomendable informarle sobre el procedimiento correcto y, si hay urgencia, contactar a Procurement para un proceso acelerado.",
+    "confidence_score": 0.5853,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "finance",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un procedimiento relacionado con proveedores y pagos, que pertenece al dominio de Finanzas y Administración."
+    },
+    "expected_domain": "finance",
+    "category": "compliance",
+    "chunks_used_ids": [
+      40,
+      39,
+      41,
+      38
+    ]
+  },
+  {
+    "domain": "hr",
+    "agent": "Agente de Recursos Humanos",
+    "question": "Quiero renunciar a la empresa. ¿Cuánto tiempo de preaviso debo dar?",
+    "answer": "Para renunciar a la empresa, debes dar un preaviso mínimo de 15 días hábiles si ocupas una posición junior o semi-senior, y de 30 días si ocupas una posición senior en adelante. Te recomiendo que respetes este plazo para garantizar una transición ordenada. Si necesitas más información sobre el proceso, no dudes en preguntar.",
+    "confidence_score": 0.5314,
+    "model_used": "gpt-4o-mini",
+    "routing": {
+      "domain": "hr",
+      "confidence": 0.9,
+      "reasoning": "La pregunta se refiere a un aspecto de la renuncia, que es parte de Recursos Humanos."
+    },
+    "expected_domain": "hr",
+    "category": "offboarding",
+    "chunks_used_ids": [
+      44,
+      45,
+      37,
+      55
+    ]
+  }
+]

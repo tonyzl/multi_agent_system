@@ -1,0 +1,234 @@
+# GUÍA DE DEVOPS, CLOUD Y PRÁCTICAS DE INGENIERÍA — TECHCORP
+
+## PARTE 1: GESTIÓN DE AMBIENTES
+
+### 1.1 Estrategia de Ambientes
+
+TechCorp opera con cuatro ambientes claramente diferenciados:
+
+**Local (desarrollo en la laptop del colaborador):**
+- El desarrollador corre los servicios localmente con Docker Compose
+- Las bases de datos locales son instancias Docker temporales
+- Los servicios externos se mockean con WireMock o similar
+- Nunca se conecta el ambiente local a datos de producción
+
+**Development (shared dev):**
+- Ambiente compartido para integración temprana entre equipos
+- Se actualiza automáticamente con cada merge a la rama `develop`
+- Los datos son sintéticos generados con Faker/Mockaroo
+- Accesible desde la VPN corporativa: dev.techcorp.internal
+
+**Staging:**
+- Espejo fiel de producción con datos anonimizados
+- Se actualiza automáticamente con cada merge a `main`
+- Requiere aprobación de QA para liberar a producción
+- Accesible desde la VPN: staging.techcorp.internal
+
+**Production:**
+- Solo se actualiza mediante deploys aprobados y versionados
+- Cambios de base de datos requieren migration scripts revisados
+- Rollback disponible en menos de 5 minutos
+- Accesible en: app.techcorp.com
+
+### 1.2 Gestión de Feature Flags
+
+TechCorp usa LaunchDarkly para gestión de feature flags. Los feature flags permiten:
+
+- Desplegar código desactivado (dark launch) y activarlo gradualmente
+- Hacer A/B testing de funcionalidades
+- Desactivar features en producción sin necesidad de un nuevo deploy
+- Controlar el rollout por segmento de clientes (early adopters, beta users, todos)
+
+Reglas para feature flags:
+1. Todo feature nuevo debe tener un flag de feature para su rollout controlado
+2. Los flags se eliminan del código después de 30 días de estar al 100%
+3. Los flags de emergencia (kill switches) se mantienen permanentemente
+
+---
+
+## PARTE 2: GESTIÓN DE BASES DE DATOS
+
+### 2.1 Políticas de Migraciones de Base de Datos
+
+Las migraciones de base de datos son cambios que deben manejarse con especial cuidado en producción:
+
+**Tipos de migraciones según riesgo:**
+
+**Verde (sin riesgo):** Se pueden hacer directamente.
+- Agregar nueva tabla
+- Agregar columna nullable
+- Agregar índice concurrentemente (CONCURRENTLY en PostgreSQL)
+
+**Amarillo (riesgo moderado):** Requieren ventana de mantenimiento o estrategia especial.
+- Modificar tipo de dato de columna existente (usar multi-step migration)
+- Renombrar tabla (usar vista intermedia)
+- Agregar columna NOT NULL con default
+
+**Rojo (alto riesgo):** Requieren aprobación del Tech Lead y ventana de mantenimiento programada.
+- Eliminar tabla o columna en uso
+- Cambiar nombre de columna en uso
+- Modificar constraints existentes
+
+### 2.2 Backup y Recuperación
+
+TechCorp tiene la siguiente política de backups:
+
+- **PostgreSQL (producción):** Backup continuo con WAL archiving en S3. Point-in-time recovery hasta 7 días atrás. Snapshot diario con retención de 30 días.
+- **Redis (caché):** No se hace backup. El caché es efímero. Los sistemas deben tolerar un cache miss total.
+- **S3 (archivos):** Versionado habilitado, replicación cross-region a eu-west-1.
+
+El Recovery Time Objective (RTO) es de 4 horas para producción. El Recovery Point Objective (RPO) es de 1 hora (pérdida máxima de datos aceptable).
+
+Los restores de bases de datos deben probarse trimestralmente en el ambiente de staging.
+
+---
+
+## PARTE 3: MONITOREO Y ALERTAS
+
+### 3.1 Stack de Observabilidad
+
+TechCorp usa el siguiente stack para observabilidad:
+
+**Métricas:** DataDog. Todos los servicios exponen métricas en formato Prometheus que DataDog recolecta. Los dashboards de servicio son automáticos via Kubernetes annotations.
+
+**Logs:** DataDog Logs. Los logs deben estar en formato JSON estructurado. Campos obligatorios: `timestamp`, `level`, `service`, `trace_id`, `message`. Los logs de nivel ERROR o FATAL generan alertas automáticas.
+
+**Traces distribuidos:** DataDog APM con OpenTelemetry. Cada request se traza de extremo a extremo entre microservicios. Los trace IDs se propagan en headers HTTP y en mensajes de Kafka.
+
+**Uptime y SLA:** PagerDuty + DataDog Synthetic Tests. Pruebas sintéticas cada minuto para los endpoints críticos desde múltiples regiones.
+
+### 3.2 Dashboard de Ingeniería
+
+Cada equipo tiene un dashboard de servicio en DataDog que incluye:
+
+- Latencia P50, P95, P99 de los últimos 7 días
+- Tasa de errores (4xx y 5xx)
+- Throughput (requests/segundo)
+- Uso de CPU y memoria del pod/container
+- Saturación de la base de datos (query time, connection pool)
+- Eventos de deployment marcados en las gráficas
+
+Los dashboards se revisan en el standup diario del equipo.
+
+### 3.3 On-Call y Escalamiento
+
+**Rotación de guardia:** Semanal, entre todos los miembros senior del equipo de ingeniería. El on-call recibe USD 50 de compensación semanal.
+
+**Herramientas del on-call:**
+- PagerDuty app en el celular con alertas configuradas
+- Runbook de respuesta a incidentes en Confluence
+- Acceso de emergencia a producción desde el móvil (VPN + kubectl read-only)
+
+**Escalamiento:**
+- Si el on-call no puede resolver en 15 min → escala al Tech Lead
+- Si el Tech Lead no puede resolver en 30 min → escala al Engineering Manager
+- Si el EM no puede resolver → escala al CTO
+
+---
+
+## PARTE 4: GUÍA DE KUBERNETES EN TECHCORP
+
+### 4.1 Estructura de Namespaces
+
+Los clusters EKS de TechCorp usan la siguiente estructura de namespaces:
+
+```
+techcorp-prod cluster:
+├── production/          → Servicios de producción
+├── monitoring/          → DataDog, Prometheus, Grafana
+├── ingress/             → NGINX Ingress + cert-manager
+└── security/            → OPA Gatekeeper, Falco
+
+techcorp-staging cluster:
+├── staging/             → Espejo de producción
+└── qa-automation/       → Tests E2E
+```
+
+### 4.2 Recursos y Límites
+
+Todos los pods deben tener definidos `requests` y `limits` de CPU y memoria:
+
+```yaml
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
+```
+
+Los pods sin resource limits son rechazados por OPA Gatekeeper en producción.
+
+### 4.3 Health Checks
+
+Todos los servicios deben implementar:
+
+- **Liveness probe:** Verifica que el proceso está vivo. Si falla, Kubernetes reinicia el pod.
+- **Readiness probe:** Verifica que el pod está listo para recibir tráfico. Si falla, se saca del load balancer.
+- **Startup probe:** Para aplicaciones con startup lento, evita que la liveness probe las mate durante el arranque.
+
+Los endpoints recomendados son `/health/live` y `/health/ready`.
+
+---
+
+## PARTE 5: GUÍA DE API DESIGN
+
+### 5.1 Estándares REST en TechCorp
+
+**Nomenclatura de recursos:**
+- Recursos en plural: `/users`, `/orders`, `/products`
+- Kebab-case para recursos multi-palabra: `/order-items`, `/user-profiles`
+- Jerarquía para relaciones: `/users/{id}/orders`
+
+**Códigos HTTP:**
+- `200 OK`: Respuesta exitosa con body
+- `201 Created`: Recurso creado (POST exitoso)
+- `204 No Content`: Operación exitosa sin body (DELETE)
+- `400 Bad Request`: Error del cliente (validación fallida)
+- `401 Unauthorized`: Sin autenticación
+- `403 Forbidden`: Sin autorización
+- `404 Not Found`: Recurso no encontrado
+- `409 Conflict`: Conflicto de estado (ej: email ya existe)
+- `422 Unprocessable Entity`: Datos bien formados pero inválidos semánticamente
+- `500 Internal Server Error`: Error del servidor
+
+**Paginación:** Cursor-based para listas grandes (no offset/limit).
+```json
+{
+  "data": [...],
+  "pagination": {
+    "next_cursor": "abc123",
+    "has_more": true,
+    "total": 1543
+  }
+}
+```
+
+### 5.2 Versionado de APIs
+
+Las APIs públicas se versionan con prefijo en la URL: `/v1/`, `/v2/`.
+
+Reglas de versionado:
+- Los cambios backwards-compatible (agregar campos, nuevos endpoints) no requieren nueva versión
+- Los cambios breaking (eliminar campos, cambiar tipos) requieren nueva versión major
+- La versión anterior se mantiene activa durante mínimo 6 meses después del lanzamiento de la nueva
+- Los clientes reciben notificación con 3 meses de anticipación antes del deprecado
+
+### 5.3 Autenticación y Autorización
+
+**Autenticación:** Todas las APIs de TechCorp usan JWT (JSON Web Tokens) firmados con RS256.
+- Los tokens tienen expiración de 1 hora para access tokens
+- Los refresh tokens expiran en 7 días
+- Los tokens se almacenan en HttpOnly cookies o en memoria (nunca en localStorage)
+
+**Autorización:** RBAC (Role-Based Access Control) implementado con claims en el JWT.
+- Los roles se definen en el servicio de Identity
+- Los permisos se validan en cada microservicio con un middleware estándar
+- Los cambios de permisos son auditados y alertados al equipo de Seguridad
+
+---
+
+*Guía DevOps y Cloud — TechCorp Engineering*
+*Responsable: Platform Engineering Team | Actualización: Enero 2025*
+*Canal de consultas: #platform-engineering en Slack*

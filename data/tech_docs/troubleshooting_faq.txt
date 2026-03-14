@@ -1,0 +1,145 @@
+# GUÍA DE TROUBLESHOOTING Y FAQ TÉCNICO — TECHCORP IT
+
+## PROBLEMAS COMUNES Y SOLUCIONES
+
+### Problema: No puedo conectarme a la VPN
+
+**Síntomas:** El cliente de Cisco AnyConnect muestra error de conexión o timeout.
+
+**Soluciones en orden de intento:**
+1. Verifica que tu código de 2FA sea el más reciente (expiran en 30 segundos)
+2. Verifica tu conexión a internet sin VPN (abre una página pública)
+3. Desactiva temporalmente el firewall del sistema operativo
+4. Reinicia el servicio VPN: en Mac, cierra la app desde el menú y vuelve a abrirla
+5. Si usas una red corporativa de cliente, puede haber restricciones de puerto. Prueba la conexión desde datos móviles.
+6. Borra la caché de la app: desinstala y reinstala Cisco AnyConnect desde it.techcorp.com/vpn
+
+Si ninguno de los pasos anteriores funciona, abre un ticket en Jira con captura del error.
+
+---
+
+### Problema: No recibo correos en Gmail corporativo
+
+**Síntomas:** Los correos no llegan o hay retrasos de más de 5 minutos.
+
+**Verificaciones:**
+1. Revisa la carpeta de Spam y Promotiones
+2. Verifica que no tengas filtros activos que muevan mensajes automáticamente
+3. Comprueba que tu bandeja no esté llena (Settings > Manage > Storage)
+4. Si estás esperando correos de un dominio específico, pide al remitente que revise sus logs de envío
+
+**Si el problema persiste:** Reporta a it-support@techcorp.com indicando el remitente esperado, hora aproximada y si el remitente confirmó que el correo fue enviado.
+
+---
+
+### Problema: La laptop está muy lenta
+
+**Diagnóstico rápido:**
+1. Abre Monitor de Actividad (Activity Monitor) y verifica procesos con alto uso de CPU o RAM
+2. Comprueba el espacio en disco libre (debe haber al menos 15% libre)
+3. Verifica si hay actualizaciones de macOS pendientes
+4. Reinicia el equipo si lleva más de 3 días sin hacerlo
+
+**Causas comunes:**
+- Chrome con muchas pestañas y extensiones (usa arc o safari como alternativa)
+- El agente CrowdStrike realizando un escaneo (proceso temporal)
+- Sincronización de Google Drive con muchos archivos
+- Procesos de indexación de Spotlight
+
+Si la lentitud persiste, crea un ticket en Jira con: captura del monitor de actividad, versión de macOS y descripción de las apps que usas habitualmente.
+
+---
+
+### Problema: No tengo acceso a un repositorio en GitHub
+
+**Proceso:**
+1. Verifica que estás usando tu cuenta de GitHub corporativa (usuario@techcorp.com)
+2. Solicita acceso al Tech Lead del proyecto via Slack
+3. Si el Tech Lead confirma que debes tener acceso, crea ticket en Jira > IT > Access Request indicando el repositorio exacto y el nivel de acceso (read, write, admin)
+
+**Nota:** El acceso a repositorios de producción y de seguridad requiere aprobación adicional del Director de Ingeniería.
+
+---
+
+### Problema: Docker no corre en mi Mac
+
+**Síntomas:** Docker Desktop no inicia, o los contenedores no levantan.
+
+**Soluciones:**
+1. Asegúrate de tener la versión más reciente de Docker Desktop (it.techcorp.com/software)
+2. Verifica que tu Mac tiene habilitada la virtualización: Apple Menu > About this Mac > Hardware
+3. En Apple Silicon (M1/M2/M3): Asegúrate de que el modo Rosetta no esté causando conflictos con imágenes x86
+4. Borra los datos del Docker Desktop y reconfigura: Troubleshoot > Clean/Purge data
+
+**Para imágenes incompatibles de arquitectura:**
+Al hacer pull/run de imágenes x86 en Apple Silicon, agrega `--platform linux/amd64`. Para builds cross-platform usa `docker buildx`.
+
+---
+
+### Problema: Kubectl no puede conectarse al cluster
+
+**Síntomas:** `kubectl get pods` devuelve error de conexión o credentials.
+
+**Verificaciones:**
+1. Verifica que la VPN esté activa
+2. Verifica tu contexto actual: `kubectl config current-context`
+3. Los contextos disponibles son: `techcorp-dev`, `techcorp-staging`, `techcorp-prod`
+4. Para cambiar de contexto: `kubectl config use-context techcorp-dev`
+5. Si el contexto no existe, reconfigura con: `aws eks update-kubeconfig --region us-east-1 --name techcorp-dev`
+
+**Acceso a producción:** Requiere permisos especiales. Contacta al Tech Lead si necesitas acceso de emergencia.
+
+---
+
+## PREGUNTAS FRECUENTES DE DESARROLLO
+
+**¿Qué versión de Node.js debo usar?**
+Usa Node.js 20 LTS (versión LTS actual). Gestiona las versiones con nvm: `nvm install 20 && nvm use 20`. El archivo `.nvmrc` en cada repositorio especifica la versión correcta.
+
+**¿Cómo configuro las variables de entorno locales?**
+Copia el archivo `.env.example` del repositorio como `.env.local` y completa los valores desde 1Password > vault "Dev Local". Nunca commitees archivos `.env`.
+
+**¿Cómo corro los tests localmente?**
+Cada repositorio tiene un script `test` en el `package.json` o `Makefile`. Consulta el README del repositorio. Para correr todos los tests del monorepo: `pnpm run test` desde la raíz.
+
+**¿Cómo hago deploy a staging manualmente?**
+Los deploys a staging son automáticos al mergear a `main`. Si necesitas hacer un deploy manual, usa el workflow de GitHub Actions: Actions > Deploy to Staging > Run workflow.
+
+**¿Cómo reviso los logs de producción?**
+Accede a DataDog (datadog.techcorp.com) con tus credenciales SSO. Filtra por servicio, ambiente y rango de tiempo. Puedes crear dashboards personalizados y configurar alertas.
+
+**¿Dónde están documentadas las APIs internas?**
+En el portal developer interno: api.techcorp.com/docs. Cada servicio tiene su especificación OpenAPI disponible en `/docs` o `/openapi.json`.
+
+**¿Cómo solicito un nuevo dominio o subdominio?**
+Crea un ticket en Jira > IT > Domain Request con el subdominio deseado y el destino (IP, load balancer, o servicio). El equipo de infraestructura lo procesa en 1 día hábil.
+
+**¿Qué hago si tengo una vulnerabilidad crítica en una dependencia?**
+Reporta inmediatamente al canal #security en Slack. Si la vulnerabilidad es activamente explotada, es un incidente P1. Snyk debe generar un PR automático de actualización; revísalo y mergealo con urgencia.
+
+---
+
+## HERRAMIENTAS Y RECURSOS
+
+### Herramientas Internas
+- **it.techcorp.com:** Portal de IT self-service
+- **learning.techcorp.com:** LMS corporativo
+- **api.techcorp.com/docs:** Documentación de APIs internas
+- **status.techcorp.com:** Estado de los servicios en tiempo real
+- **datadog.techcorp.com:** Observabilidad y logs
+
+### Canales de Slack Técnicos
+- **#engineering:** Canal general de ingeniería
+- **#it-support:** Soporte técnico
+- **#security:** Alertas e incidentes de seguridad
+- **#deployments:** Notificaciones automáticas de deploys
+- **#p1-incidents:** Solo para incidentes críticos
+
+### Documentación
+- **Confluence:** confluence.techcorp.com (wiki corporativo)
+- **ADRs (Architecture Decision Records):** En cada repositorio en la carpeta `/docs/adr/`
+- **Runbooks:** En Confluence > Engineering > Runbooks
+
+---
+
+*IT Support — TechCorp | it-support@techcorp.com | Ext. 3000*

@@ -1,0 +1,81 @@
+# PREGUNTAS FRECUENTES — RECURSOS HUMANOS
+
+## SECCIÓN A: NÓMINA Y PAGOS
+
+**¿Cuándo se paga la nómina?**
+La nómina se paga los días 25 de cada mes (o el viernes anterior si cae fin de semana o festivo). El pago se deposita directamente en la cuenta bancaria registrada en Workday. Si tienes dudas sobre algún rubro, escribe a payroll@techcorp.com antes del día 20.
+
+**¿Cómo solicito un adelanto de sueldo?**
+Los colaboradores con más de 6 meses en la empresa pueden solicitar un adelanto de hasta el 50% del salario mensual. La solicitud se hace en Workday > Mi Nómina > Solicitar Adelanto, con al menos 5 días hábiles de anticipación. Se puede solicitar máximo una vez cada 6 meses.
+
+**¿Qué pasa si hay un error en mi nómina?**
+Tienes hasta el día 28 del mes para reportar discrepancias a payroll@techcorp.com. Los errores a favor de la empresa se corrigen en la siguiente nómina y los errores a tu favor se descuentan en cuotas acordadas.
+
+**¿Cómo cambio mi cuenta bancaria para el pago?**
+Ingresa a Workday > Información Personal > Datos Bancarios y actualiza los datos. Los cambios toman efecto en el siguiente ciclo de nómina. Si el cambio es urgente, contáctate directamente con Nómina.
+
+---
+
+## SECCIÓN B: VACACIONES Y AUSENCIAS
+
+**¿Cómo solicito mis vacaciones?**
+Ingresa a Workday > Tiempo y Ausencias > Solicitar Vacaciones. Selecciona las fechas, agrega una nota si es necesario y envía para aprobación de tu manager. El sistema notifica automáticamente al manager, quien tiene 3 días hábiles para aprobar o solicitar cambio de fechas.
+
+**¿Cuántos días de vacaciones tengo disponibles?**
+Puedes ver tu saldo en Workday > Mi Tiempo > Balance de Ausencias. El saldo se actualiza en tiempo real después de cada aprobación. Los días acumulan mensualmente (1.25 días por mes para el plan de 15 días anuales).
+
+**¿Puedo tomar medio día de vacaciones?**
+Sí, TechCorp permite medios días de vacaciones. Selecciona "Medio día AM" o "Medio día PM" en el formulario de solicitud en Workday.
+
+**¿Qué hago si me enfermo y no puedo ir a trabajar?**
+Notifica a tu manager directo lo antes posible (preferiblemente antes de las 9:00 AM) por Slack o correo. Si la ausencia dura más de 1 día, sube el certificado médico a Workday > Tiempo y Ausencias > Licencia Médica dentro de las 48 horas de reincorporación.
+
+**¿Puedo trabajar desde casa si estoy levemente enfermo?**
+Sí, en casos donde el colaborador se siente en condiciones de trabajar pero prefiere no ir presencialmente por salud propia o para no contagiar al equipo, puede hacer la jornada de forma remota sin usar días de enfermedad.
+
+---
+
+## SECCIÓN C: BENEFICIOS
+
+**¿Cómo activo mi seguro médico?**
+El seguro médico se activa automáticamente al primer día del mes siguiente a tu contratación. Recibirás un correo de la aseguradora con las instrucciones para descargar la app y obtener tu carnet digital. Para urgencias antes de la activación, contacta a benefits@techcorp.com.
+
+**¿Puedo incluir a mi pareja en el seguro sin estar casados?**
+Sí, TechCorp reconoce las uniones de hecho. Para incluir a una pareja no casada, debes presentar declaración de convivencia ante notario y llevarla a RRHH. El trámite tiene un tiempo de procesamiento de 10 días hábiles.
+
+**¿Cómo solicito el subsidio del gimnasio?**
+Sube la factura de tu membresía mensual a Workday > Beneficios > Reembolso Bienestar. El reembolso (hasta USD 50) se incluye en la nómina del mes siguiente. El comprobante debe indicar tu nombre y la fecha del período cubierto.
+
+**¿El subsidio educativo cubre cualquier tipo de curso?**
+El subsidio de USD 1,500 anuales cubre cursos, certificaciones, congresos y programas de posgrado relacionados con el rol actual o con el plan de carrera aprobado. No cubre hobbies o formación completamente ajena a la actividad profesional. Requiere aprobación previa del gerente y RRHH.
+
+---
+
+## SECCIÓN D: CLIMA LABORAL Y RELACIONES
+
+**¿Cómo reporto un problema con mi manager?**
+Puedes hablar directamente con RRHH de forma confidencial. Solicita una reunión a través de hr@techcorp.com o por mensaje directo a cualquier Business Partner de RRHH en Slack. También existe el canal anónimo de ética.
+
+**¿Existen actividades de integración de equipos?**
+Sí. Cada trimestre el área de Cultura organiza actividades de team building, ya sea virtuales o presenciales. Adicionalmente, cada equipo tiene un presupuesto anual de USD 200 por persona para actividades a decidir en conjunto.
+
+**¿Cómo funciona el programa de referidos?**
+Si recomiendas a alguien que es contratado y supera el período de prueba, recibes un bono de referido. El monto varía según el nivel de la posición: USD 500 para posiciones junior, USD 1,000 para semi-senior/senior, y USD 2,000 para posiciones de liderazgo.
+
+---
+
+## SECCIÓN E: TRABAJO REMOTO
+
+**¿Cuáles son las reglas para el trabajo remoto?**
+En modalidad híbrida, los 2 días remotos los elige el colaborador en coordinación con su equipo, siempre que no coincidan todos en el mismo día. Se espera disponibilidad en la banda fija de 10:00 a 16:00 en todos los días de trabajo.
+
+**¿Qué equipo provee la empresa para trabajar desde casa?**
+La empresa provee laptop, mouse y teclado. Para auriculares y monitores adicionales, existe un presupuesto de USD 300 para el primer año (home office allowance), solicitabable a través de Facilities en Workday.
+
+**¿Puedo trabajar desde otro país?**
+Sí, hasta 4 semanas corridas al año, previa aprobación del manager y notificación a RRHH con al menos 15 días de anticipación. Existen restricciones legales para algunos países; RRHH puede orientarte sobre los destinos habilitados.
+
+---
+
+*Para consultas no respondidas en este FAQ: hr@techcorp.com | Línea directa Ext. 2100*
+*Horario de atención: Lunes a Viernes, 9:00 a 18:00*

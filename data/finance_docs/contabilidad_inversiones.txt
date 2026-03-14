@@ -1,0 +1,167 @@
+# GUÍA DE CONTABILIDAD, INVERSIONES Y REPORTING — TECHCORP FINANCE
+
+## PARTE 1: PLAN DE CUENTAS Y CENTRO DE COSTOS
+
+### Estructura del Plan de Cuentas
+
+TechCorp utiliza el siguiente esquema de clasificación de cuentas:
+
+**Cuentas de Ingresos (4XXXXX):**
+- 410000 — Ingresos por suscripciones SaaS
+- 420000 — Ingresos por servicios profesionales
+- 430000 — Ingresos por licencias de software
+- 440000 — Otros ingresos operativos
+
+**Cuentas de Gastos Operativos (5XXXXX):**
+- 510000 — Salarios y compensaciones
+- 520000 — Beneficios a empleados
+- 530000 — Viajes y entretenimiento
+- 540000 — Marketing y publicidad
+- 550000 — Software y suscripciones tecnológicas
+- 560000 — Servicios profesionales y consultoría
+- 570000 — Alquiler y utilidades de oficina
+- 580000 — Depreciación y amortización
+
+**Centros de Costo por Área:**
+- CC-100 — Producto y Tecnología
+- CC-200 — Ventas y Business Development
+- CC-300 — Marketing y Comunicaciones
+- CC-400 — Operaciones y Customer Success
+- CC-500 — Recursos Humanos
+- CC-600 — Finanzas y Administración
+- CC-700 — Legal y Compliance
+
+### Asignación de Gastos a Centros de Costo
+
+Reglas para asignar gastos al centro de costo correcto:
+
+1. Los gastos de personal se asignan al área donde trabaja el colaborador
+2. Los gastos de proyectos se asignan al área responsable del proyecto
+3. Los gastos compartidos (alquiler, servicios generales) se prorratean según número de headcount
+4. Los gastos de IT de uso general se asignan a CC-100
+
+---
+
+## PARTE 2: MÉTRICAS FINANCIERAS CLAVE
+
+### KPIs Operativos
+
+TechCorp mide su desempeño financiero con los siguientes indicadores:
+
+**Métricas de Crecimiento:**
+- **MRR (Monthly Recurring Revenue):** Ingresos recurrentes mensuales. Meta de crecimiento: 15% interanual.
+- **ARR (Annual Recurring Revenue):** Proyección anualizada del MRR. Métrica principal para reportes de inversores.
+- **Net Revenue Retention (NRR):** Porcentaje de ingresos retenidos de clientes existentes (incluyendo expansión y churn). Meta: >115%.
+- **Customer Acquisition Cost (CAC):** Costo promedio de adquirir un cliente. Se calcula dividiendo el gasto de ventas + marketing por clientes nuevos del período.
+- **LTV (Lifetime Value):** Valor proyectado del cliente durante su relación con TechCorp. Meta: LTV/CAC > 3x.
+
+**Métricas de Rentabilidad:**
+- **Gross Margin:** Margen bruto (ingresos menos costo de ventas directo). Meta: >70% para el segmento SaaS.
+- **EBITDA Margin:** Meta de rentabilidad operativa: >20% para el año fiscal 2025.
+- **Cash Burn Rate:** Efectivo consumido por mes. Seguimiento semanal por el CFO.
+- **Runway:** Meses de operación con el efectivo disponible. Mínimo aceptable: 18 meses.
+
+### Reporte de Resultados
+
+Los resultados financieros se publican internamente en los siguientes formatos:
+
+**Dashboard en tiempo real (Looker):**
+Accesible en finance.techcorp.com para todos los managers. Incluye MRR, ARR, burn rate y principales KPIs.
+
+**Monthly P&L (Estado de Pérdidas y Ganancias):**
+Se distribuye a directores y managers el día 10 de cada mes, correspondiente al mes anterior cerrado.
+
+**Quarterly Board Report:**
+Presentación al Consejo de Administración con análisis completo de desempeño, forecast y estrategia financiera.
+
+---
+
+## PARTE 3: POLÍTICA DE INVERSIONES Y GESTIÓN DE EFECTIVO
+
+### Principios de Gestión de Tesorería
+
+TechCorp gestiona su efectivo bajo los principios de seguridad, liquidez y rendimiento (en ese orden de prioridad):
+
+**Seguridad:** Los fondos corporativos se depositan únicamente en bancos con calificación crediticia AA o superior.
+
+**Liquidez:** Mínimo el 70% del efectivo debe estar disponible en instrumentos de liquidez inmediata (cuentas corrientes y money market funds).
+
+**Rendimiento:** El 30% restante puede invertirse en instrumentos de bajo riesgo a corto plazo (T-bills, CDs bancarios hasta 90 días).
+
+### Cuentas Bancarias Corporativas
+
+TechCorp opera con las siguientes cuentas:
+
+- **Cuenta operativa principal:** Para pagos de nómina, proveedores y gastos operativos
+- **Cuenta de reserva:** 6 meses de gastos operativos como colchón mínimo
+- **Cuenta de inversiones a corto plazo:** Para la porción invertida del efectivo
+- **Cuentas en moneda extranjera:** EUR y GBP para operaciones en Europa
+
+La firma de cheques o autorización de transferencias mayores a USD 50,000 requiere dos firmantes: el CFO más el CEO o un Director autorizado.
+
+---
+
+## PARTE 4: AUDITORÍA Y CONTROLES INTERNOS
+
+### Estructura de Control Interno
+
+TechCorp tiene implementados los siguientes controles:
+
+**Controles Preventivos:**
+- Segregación de funciones en todos los procesos de pago
+- Límites de autorización por nivel jerárquico
+- Pre-aprobación de gastos fuera de presupuesto
+- Validación automática de proveedores en lista negra OFAC/SAR
+
+**Controles Detectivos:**
+- Conciliaciones bancarias mensuales
+- Revisión de gastos de tarjeta corporativa por un auditor interno
+- Análisis de varianzas presupuestarias con alertas automáticas
+- Revisión anual de accesos a sistemas financieros
+
+**Controles Correctivos:**
+- Proceso de ajustes contables con doble aprobación
+- Plan de acción para hallazgos de auditoría interna
+- Proceso de recuperación de pagos realizados en error
+
+### Auditoría Externa
+
+TechCorp es auditada anualmente por una firma Big Four. El proceso:
+
+- **Octubre-Noviembre:** Trabajo de campo de la auditoría del año en curso
+- **Enero-Febrero:** Revisión de cuentas de cierre del año anterior
+- **Marzo:** Emisión del dictamen de auditoría
+- **Abril:** Publicación de estados financieros auditados para inversores
+
+Durante la auditoría, todos los colaboradores deben responder oportunamente las solicitudes de información de los auditores. Los plazos de respuesta son gestionados por el equipo de Finanzas.
+
+---
+
+## PARTE 5: TRIBUTACIÓN Y CUMPLIMIENTO FISCAL
+
+### Obligaciones Fiscales de la Empresa
+
+TechCorp cumple con todas sus obligaciones fiscales en las jurisdicciones donde opera:
+
+**Impuesto a la Renta Corporativo:**
+La declaración anual se presenta en marzo del año siguiente. El equipo de tax trabaja con asesores externos para optimizar la posición fiscal de manera legal y transparente.
+
+**IVA / Impuesto sobre las Ventas:**
+Para operaciones en España: IVA del 21% en servicios. Para LATAM: las tasas varían por país.
+Las facturas emitidas a clientes deben incluir el desglose correcto del impuesto.
+
+**Retenciones:**
+Los pagos a freelancers y proveedores individuales están sujetos a retención en la fuente según la normativa local. Contabilidad gestiona automáticamente las retenciones en SAP.
+
+### Obligaciones del Colaborador
+
+Los colaboradores de TechCorp son responsables de sus propias obligaciones tributarias personales. La empresa:
+
+- Emite certificados de retención anuales antes del 31 de enero
+- No asesora a colaboradores sobre declaraciones personales (cada uno debe gestionar con un contador propio)
+- Puede orientar sobre el tratamiento tributario de los beneficios corporativos (seguros, bonos, etc.)
+
+---
+
+*Guía Financiera — TechCorp Finance & Accounting Team*
+*Última revisión: Enero 2025 | finance@techcorp.com | Ext. 4000*

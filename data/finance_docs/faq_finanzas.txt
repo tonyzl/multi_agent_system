@@ -1,0 +1,136 @@
+# PREGUNTAS FRECUENTES Y GUÍA DE PROCEDIMIENTOS FINANCIEROS — TECHCORP
+
+## FAQ REEMBOLSOS Y GASTOS
+
+**¿Cuánto tiempo tarda en acreditarse mi reembolso?**
+Los reembolsos aprobados antes del día 20 del mes se incluyen en la nómina del mes en curso. Los aprobados después del día 20 se procesan en la nómina del mes siguiente, a menos que solicites un procesamiento urgente a finanzas@techcorp.com (disponible para montos mayores a USD 200).
+
+**¿Qué pasa si no tengo el comprobante del gasto?**
+Para gastos menores de USD 25 se acepta una declaración jurada en el sistema Expensify. Para montos mayores, el gasto no puede ser reembolsado sin comprobante. Si perdiste el comprobante, contacta al proveedor para solicitar un duplicado.
+
+**¿Puedo usar la tarjeta corporativa para comprar comida al equipo?**
+Sí, las comidas de equipo son un gasto aprobable hasta USD 30 por persona. Agrega en la descripción los nombres de los participantes y el motivo (ej: "Team lunch — planning Q3 sprint"). Para equipos de más de 10 personas, se requiere aprobación previa del Director.
+
+**¿Cómo funciona el anticipo para viajes?**
+Para viajes al exterior puedes solicitar un anticipo de hasta USD 500. Solicítalo en Expensify > Advances con al menos 5 días hábiles de anticipación. El saldo no utilizado debe devolverse dentro de los 5 días hábiles de regreso del viaje.
+
+**¿Puedo reportar gastos en moneda extranjera?**
+Sí. En Expensify puedes ingresar el gasto en la moneda original y el sistema aplica el tipo de cambio del día de la transacción (según XE.com). Los gastos en criptomonedas no son reembolsables.
+
+**¿Hay límite de gastos de entretenimiento con clientes?**
+El límite es de USD 150 por persona por evento. Para eventos especiales (lanzamiento de producto, conferencia anual) puede solicitarse un presupuesto específico al Director de Área con aprobación del CFO. Siempre documenta el nombre del cliente y la oportunidad comercial relacionada.
+
+---
+
+## FAQ FACTURACIÓN Y PROVEEDORES
+
+**¿Cómo consigo que un proveedor sea dado de alta en el sistema?**
+Pide al proveedor que complete el formulario de alta en suppliers.techcorp.com. El proveedor debe subir: datos fiscales, información bancaria, y completar el cuestionario de compliance. El proceso toma 3 días hábiles.
+
+**¿Puedo pagar a un proveedor por transferencia personal y luego pedirle reembolso?**
+No. Todos los pagos a proveedores deben hacerse a través del sistema de cuentas por pagar de TechCorp. Hacer pagos personales y solicitar reembolso crea riesgos legales y contables. Si hay urgencia, contacta a Procurement para un proceso acelerado.
+
+**¿Por qué rechazaron la factura de mi proveedor?**
+Las razones más comunes de rechazo son: datos fiscales del emisor no coinciden con los del sistema, el monto no coincide con la orden de compra (PO), no hay PO asociado, o la factura está mal dirigida. Procurement envía un correo automático al proveedor con el motivo específico.
+
+**¿Cómo sé el estado de pago de una factura?**
+En el portal finance.techcorp.com > Accounts Payable > Invoice Status. Puedes filtrar por proveedor, fecha, y monto. Los proveedores también pueden consultar en suppliers.techcorp.com con sus credenciales de acceso.
+
+---
+
+## PROCEDIMIENTOS PASO A PASO
+
+### Cómo Solicitar una Orden de Compra (PO)
+
+1. Ingresa a SAP > Materials Management > Create Purchase Order
+2. Selecciona el proveedor (debe estar dado de alta)
+3. Ingresa los artículos o servicios con código, descripción, cantidad y precio unitario
+4. Asigna el centro de costo y la cuenta contable correspondiente
+5. Adjunta la cotización del proveedor
+6. Envía para aprobación del manager y, si supera el límite, del Director
+7. Una vez aprobado, SAP genera el número de PO automáticamente
+8. Envía el número de PO al proveedor para que lo incluya en su factura
+
+### Cómo Reportar un Gasto con Tarjeta Corporativa
+
+1. Abre Expensify en app.expensify.com
+2. El gasto de tarjeta aparece automáticamente en "Imported from Credit Card"
+3. Haz clic en el gasto para asignarle categoría y descripción
+4. Adjunta el comprobante (foto o PDF)
+5. Agrega la descripción del propósito de negocio
+6. Incluye en los participantes si fue una comida de equipo/cliente
+7. Agrega el gasto al reporte mensual correspondiente
+8. Envía el reporte para aprobación antes del día 5 del mes siguiente
+
+### Cómo Solicitar Presupuesto para un Proyecto Nuevo
+
+1. Descarga la plantilla "Project Budget Request" de Confluence > Finance > Templates
+2. Completa: descripción del proyecto, objetivo de negocio, desglose de costos por categoría, timeline de desembolsos, y KPIs de retorno esperados
+3. Envía a tu manager y al Director del Área para aprobación inicial
+4. Una vez aprobado por el área, envía a finanzas@techcorp.com para revisión
+5. Finanzas programa una reunión de presentación si el monto supera USD 50,000
+6. El CFO aprueba formalmente y el presupuesto se carga en SAP en 2 días hábiles
+
+---
+
+## POLÍTICAS DE CUMPLIMIENTO FINANCIERO
+
+### Prevención de Fraude
+
+TechCorp tiene políticas estrictas para prevenir fraude interno y externo:
+
+- Separación de funciones: quien aprueba no puede procesar el pago
+- Doble aprobación para transacciones mayores a USD 10,000
+- Auditorías aleatorias de gastos con tarjeta corporativa
+- Conciliación mensual de todas las cuentas bancarias corporativas
+- Canal anónimo de denuncia financiera: ethics@techcorp.com
+
+### Política Anti-Soborno
+
+TechCorp cumple con la Foreign Corrupt Practices Act (FCPA) y estándares equivalentes. Está estrictamente prohibido:
+
+- Ofrecer o aceptar pagos, regalos, o cualquier beneficio a funcionarios públicos
+- Facilitar pagos para agilizar trámites gubernamentales
+- Regalos corporativos que superen USD 100 por persona por año
+- Contribuciones políticas usando fondos corporativos
+
+Cualquier solicitud sospechosa de soborno debe reportarse a compliance@techcorp.com de inmediato.
+
+### Confidencialidad de Información Financiera
+
+La información financiera de TechCorp es confidencial. Los colaboradores no deben:
+
+- Compartir datos financieros no públicos con personas externas
+- Discutir resultados o proyecciones con analistas, medios, o competidores
+- Usar información financiera no pública para transacciones bursátiles (insider trading)
+
+Las violaciones a esta política pueden resultar en consecuencias legales además de disciplinarias.
+
+---
+
+## GLOSARIO FINANCIERO
+
+**Accounts Payable (AP):** Cuentas por pagar — equipo responsable de pagar las facturas de proveedores.
+
+**Accrual:** Registro contable de un ingreso o gasto en el período en que ocurre, independientemente del momento del pago.
+
+**Budget vs. Actual:** Comparación entre el presupuesto planificado y el gasto real ejecutado.
+
+**CAPEX (Capital Expenditure):** Gasto de capital — inversiones en activos de largo plazo (equipos, software con licencia perpetua, infraestructura).
+
+**Centro de Costo:** Código que identifica el área o proyecto al que se asigna un gasto. Cada área tiene su propio centro de costo.
+
+**EBITDA:** Ganancia antes de intereses, impuestos, depreciación y amortización. Métrica clave de rentabilidad operativa.
+
+**OPEX (Operating Expenditure):** Gasto operativo — costos del día a día del negocio (nómina, servicios, suscripciones).
+
+**PO (Purchase Order):** Orden de compra — documento que autoriza formalmente la compra de bienes o servicios a un proveedor.
+
+**Runway:** Tiempo que la empresa puede operar con el efectivo disponible antes de quedarse sin fondos. Relevante para startups.
+
+**Working Capital:** Capital de trabajo — diferencia entre activos y pasivos corrientes. Mide la liquidez operativa de la empresa.
+
+---
+
+*Área de Finanzas — TechCorp S.A.*
+*finance@techcorp.com | Ext. 4000 | Horario: Lunes a Viernes 9:00–18:00*

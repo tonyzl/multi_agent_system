@@ -1,0 +1,130 @@
+# GUÍA DE RECLUTAMIENTO Y CAPACITACIÓN INTERNA — TECHCORP
+
+## PARTE I: GUÍA PARA GERENTES — PROCESO DE SELECCIÓN
+
+### Abrir una Vacante
+
+Para abrir una vacante debes completar el formulario de Job Requisition en Workday con al menos 10 días hábiles antes de querer iniciar el proceso. La requisición requiere:
+
+- Justificación del negocio (reemplazo, crecimiento de equipo, nuevo proyecto)
+- Descripción detallada del rol y responsabilidades
+- Perfil mínimo requerido y perfil ideal (nice-to-have)
+- Banda salarial propuesta (en coordinación con Compensaciones)
+- Fecha de ingreso esperada
+
+Una vez aprobada la requisición por el Director de Área y RRHH, el equipo de Talent Acquisition publica la vacante en menos de 3 días hábiles.
+
+### Participación del Gerente en las Entrevistas
+
+Como gerente contratante, tu participación incluye:
+
+1. **Revisión de CVs:** El equipo de TA pre-filtra candidatos. Recibirás los 3 a 5 más relevantes con una semana para revisarlos.
+2. **Entrevista técnica:** A tu cargo. Duración recomendada: 60 a 90 minutos. Puedes apoyarte en el banco de preguntas técnicas por área disponible en la intranet.
+3. **Panel de equipo:** Opcional pero recomendado. Incluye a 1 o 2 miembros del equipo para evaluar fit cultural.
+4. **Toma de decisión:** Completa el scorecard de evaluación en Workday dentro de las 24 horas de la entrevista.
+
+### Oferta y Negociación
+
+Las ofertas salariales deben estar dentro de la banda aprobada. Si deseas hacer una oferta fuera de banda, requieres aprobación del Director de RRHH y Finanzas. Nunca comuniques una oferta verbal sin la aprobación escrita de RRHH.
+
+---
+
+## PARTE II: CATÁLOGO DE CAPACITACIONES
+
+### Capacitaciones Obligatorias (Todos los Colaboradores)
+
+Las siguientes capacitaciones son obligatorias para todos los colaboradores y deben completarse en los primeros 30 días:
+
+| Capacitación | Duración | Plataforma | Frecuencia |
+|---|---|---|---|
+| Inducción Corporativa | 4 horas | LMS interno | Al ingreso |
+| Seguridad de la Información | 2 horas | LMS interno | Anual |
+| Código de Conducta y Ética | 1.5 horas | LMS interno | Anual |
+| Prevención de Acoso Laboral | 2 horas | LMS interno | Anual |
+| Privacidad y Protección de Datos | 1 hora | LMS interno | Anual |
+
+El incumplimiento de las capacitaciones obligatorias genera una alerta en el sistema que llega al manager y al Business Partner de RRHH.
+
+### Capacitaciones por Rol
+
+Cada área tiene un plan de capacitación específico. Consulta con tu manager o en el LMS interno (learning.techcorp.com) el curriculum de tu posición. Los roles técnicos cuentan con rutas de aprendizaje en:
+
+- AWS / GCP / Azure (certificaciones cloud)
+- Agile y Scrum (Scrum Master, Product Owner)
+- Liderazgo técnico y arquitectura de software
+- Seguridad de aplicaciones (OWASP, DevSecOps)
+
+Los roles de negocio cuentan con rutas en:
+- Gestión de proyectos (PMP, PMI)
+- Análisis de datos (Power BI, Tableau)
+- Finanzas para no financieros
+- Negociación y gestión de proveedores
+
+### Programa de Liderazgo
+
+TechCorp tiene un programa de desarrollo de liderazgo llamado "TechLeaders" para colaboradores con potencial de ascenso a posiciones de management. El programa dura 6 meses e incluye:
+
+- Workshops mensuales con facilitadores externos
+- Proyecto de impacto real dentro de la empresa
+- Coaching individual (8 sesiones)
+- Mentoring con un Director de la empresa
+- Participación en el proceso de evaluación de desempeño del equipo
+
+La inscripción es por nominación del manager con aprobación de RRHH.
+
+---
+
+## PARTE III: POLÍTICA DE TRABAJO FLEXIBLE
+
+### Modalidades de Trabajo Disponibles
+
+TechCorp ofrece tres modalidades según el rol y el equipo:
+
+**Híbrido Estándar (mayoría de roles):**
+- 3 días presenciales, 2 días remotos
+- Los días presenciales los define el equipo junto al manager
+- Se requiere presencia obligatoria los martes (día de sincronización de empresa)
+
+**Full Remote (roles habilitados):**
+- Disponible para algunos roles de producto, datos e ingeniería
+- Requiere aprobación especial del Director y RRHH
+- El colaborador puede ser requerido a viajar hasta 4 días por mes para reuniones
+
+**Presencial (roles operacionales):**
+- Aplica a posiciones que por naturaleza requieren presencia física
+- Pueden acceder a beneficios compensatorios (refrigerio, transporte)
+
+### Horario de Trabajo
+
+La jornada laboral estándar es de 8 horas. La banda fija de disponibilidad es de 10:00 a 16:00 (zona horaria de la oficina principal). Fuera de ese rango, el colaborador puede distribuir su jornada según mejor le convenga.
+
+TechCorp no promueve la cultura de "siempre disponible". Se espera que los colaboradores desconecten fuera de su jornada y en fines de semana. Los managers tienen la responsabilidad de modelar este comportamiento.
+
+---
+
+## PARTE IV: DIVERSIDAD, EQUIDAD E INCLUSIÓN (DEI)
+
+### Compromisos de TechCorp en DEI
+
+La empresa está comprometida con:
+
+- Paridad de género en posiciones de liderazgo (objetivo 40% para 2026)
+- Proceso de selección ciego en la primera etapa (sin nombres, edad ni foto)
+- Capacitación anual en sesgos inconscientes para todos los entrevistadores
+- Métricas públicas de DEI en el reporte anual de sostenibilidad
+
+### Grupos de Afinidad
+
+TechCorp cuenta con grupos de empleados voluntarios:
+
+- **TechWomen:** Red de mujeres en tecnología
+- **TechPride:** Comunidad LGBTQ+ y aliados
+- **TechAbility:** Inclusión de personas con discapacidad
+- **TechRoots:** Diversidad cultural y étnica
+
+Estos grupos reciben soporte y presupuesto de la empresa para sus actividades.
+
+---
+
+*Guía aprobada por Dirección de RRHH — Febrero 2025*
+*Consultas: talent@techcorp.com*

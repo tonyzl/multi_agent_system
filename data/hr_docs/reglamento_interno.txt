@@ -1,0 +1,206 @@
+# REGLAMENTO INTERNO DE TRABAJO Y BIENESTAR LABORAL — TECHCORP S.A.
+
+## TÍTULO I: DISPOSICIONES GENERALES
+
+### Artículo 1 — Objeto y Ámbito de Aplicación
+
+El presente Reglamento Interno de Trabajo regula las condiciones, derechos y obligaciones de los colaboradores de TechCorp S.A. en todas sus modalidades de contratación: tiempo completo, tiempo parcial y por proyecto. Todas las personas que presten servicios en TechCorp deben conocer y cumplir este reglamento desde su primer día de trabajo.
+
+### Artículo 2 — Definiciones
+
+Para efectos del presente reglamento se entenderá por:
+
+**Colaborador:** Toda persona natural que preste sus servicios a TechCorp bajo relación de dependencia laboral.
+
+**Manager o Gerente:** Colaborador con responsabilidad sobre un equipo y con funciones de supervisión directa.
+
+**Business Partner de RRHH:** Profesional de Recursos Humanos asignado a un área específica como punto de contacto para temas laborales.
+
+**HRIS:** Sistema de Información de Recursos Humanos. En TechCorp se utiliza Workday como plataforma HRIS principal.
+
+**LMS:** Learning Management System. Plataforma de gestión del aprendizaje. En TechCorp se usa learning.techcorp.com.
+
+---
+
+## TÍTULO II: DE LA JORNADA DE TRABAJO
+
+### Artículo 3 — Jornada Laboral Estándar
+
+La jornada laboral ordinaria es de 8 horas diarias y 40 horas semanales. La distribución de esta jornada puede variar según la modalidad de trabajo:
+
+**Modalidad Presencial:**
+- Lunes a viernes de 9:00 a 18:00, con 1 hora para almuerzo.
+- La banda de disponibilidad obligatoria es de 10:00 a 16:00.
+
+**Modalidad Híbrida:**
+- Los 2 días remotos el colaborador distribuye su jornada libremente, respetando la banda de disponibilidad.
+- Los 3 días presenciales aplica el horario de oficina.
+
+**Modalidad Full Remote:**
+- Horario completamente flexible dentro de la banda de disponibilidad de 10:00 a 16:00.
+- Se espera que el colaborador complete sus 8 horas diarias de trabajo.
+
+### Artículo 4 — Horas Extra
+
+TechCorp no promueve la cultura de horas extra. Sin embargo, en situaciones excepcionales de negocio:
+
+- Las horas extra deben ser previamente autorizadas por escrito por el manager.
+- Se compensa con tiempo libre equivalente (compensatorio) en la semana siguiente.
+- Solo en casos muy excepcionales y con aprobación del Director de RRHH se liquidan económicamente.
+- El trabajo fuera del horario habitual no constituye horas extra si fue a iniciativa del colaborador sin requerimiento de la empresa.
+
+### Artículo 5 — Registro de Asistencia
+
+TechCorp no aplica sistema de fichaje para los roles de trabajo del conocimiento. La presencia y productividad se miden por resultados (OKRs), no por horas "fichadas". Sin embargo:
+
+- Para acceso a las instalaciones se usa el sistema de control de acceso con tarjeta o huella digital.
+- Los días de trabajo remoto no requieren ningún tipo de check-in formal.
+- Para calcular días de vacaciones y licencias se usa el registro en Workday.
+
+---
+
+## TÍTULO III: DERECHOS Y OBLIGACIONES
+
+### Artículo 6 — Derechos del Colaborador
+
+Todo colaborador de TechCorp tiene derecho a:
+
+1. Recibir una remuneración justa según la política de compensación vigente.
+2. Trabajar en un ambiente libre de acoso, discriminación y violencia.
+3. Acceder a los beneficios contemplados en este reglamento y en la política de beneficios.
+4. Recibir retroalimentación regular sobre su desempeño.
+5. Conocer los criterios de evaluación con anterioridad al proceso.
+6. Apelar cualquier decisión disciplinaria ante el Director de RRHH.
+7. Solicitar información sobre su situación laboral, vacaciones acumuladas y beneficios en cualquier momento.
+8. Participar en programas de formación y desarrollo profesional.
+9. Desconectarse del trabajo fuera del horario laboral y en fines de semana.
+10. Mantener la confidencialidad de cualquier denuncia que realice en el canal de ética.
+
+### Artículo 7 — Obligaciones del Colaborador
+
+Los colaboradores deben:
+
+1. Cumplir con las funciones y responsabilidades de su cargo con diligencia y profesionalismo.
+2. Reportar con anticipación cualquier ausencia o retraso previsible.
+3. Cuidar los activos de la empresa que estén bajo su responsabilidad.
+4. Respetar la confidencialidad de la información de la empresa y de sus clientes.
+5. Mantener una conducta acorde con los valores corporativos en todo momento.
+6. Completar las capacitaciones obligatorias en los plazos establecidos.
+7. No realizar actividades de negocio propias durante el horario de trabajo.
+8. Declarar cualquier conflicto de interés potencial ante RRHH.
+
+---
+
+## TÍTULO IV: RÉGIMEN DISCIPLINARIO
+
+### Artículo 8 — Tipos de Faltas
+
+**Faltas leves:** Primera vez sin impacto significativo en la empresa.
+- Llegar tarde sin aviso previo (primera vez)
+- No cumplir con el dress code en días de reunión con clientes
+- No completar la reconciliación de tarjeta corporativa en el plazo establecido
+
+**Faltas graves:** Impacto en el equipo o incumplimiento de políticas importantes.
+- Ausencias reiteradas sin justificación
+- Incumplimiento de políticas de seguridad informática
+- Uso inadecuado de recursos corporativos
+- No reportar un conflicto de interés conocido
+
+**Faltas muy graves:** Impacto serio en la empresa o en sus colaboradores.
+- Acoso laboral o sexual
+- Robo o apropiación indebida de activos
+- Divulgación de información confidencial a competidores
+- Falsificación de documentos o comprobantes de gastos
+- Presentarse a trabajar bajo influencia de sustancias
+
+### Artículo 9 — Proceso Disciplinario
+
+El proceso disciplinario garantiza el debido proceso y proporcionalidad:
+
+1. **Investigación:** RRHH investiga el hecho con imparcialidad.
+2. **Audiencia:** El colaborador tiene derecho a presentar su versión de los hechos.
+3. **Decisión:** El Director de RRHH determina la sanción apropiada.
+4. **Notificación:** Se comunica por escrito al colaborador.
+5. **Apelación:** El colaborador puede apelar ante el CEO en un plazo de 5 días hábiles.
+
+Las sanciones, en orden de gravedad, son: amonestación verbal, amonestación escrita, suspensión sin sueldo de hasta 5 días, y terminación del contrato.
+
+---
+
+## TÍTULO V: SALUD Y SEGURIDAD EN EL TRABAJO
+
+### Artículo 10 — Obligaciones en Materia de Seguridad
+
+TechCorp está comprometido con la salud y seguridad de sus colaboradores:
+
+- Se realizan exámenes médicos de ingreso y de egreso para todos los colaboradores.
+- Se aplica ergonomía adecuada en todos los puestos de trabajo (evaluación anual).
+- Los colaboradores con trabajo en pantalla tienen derecho a pausas activas cada 2 horas.
+- Se facilitan exámenes de vista anualmente financiados por la empresa.
+
+### Artículo 11 — Accidentes de Trabajo
+
+En caso de accidente de trabajo el colaborador debe:
+
+1. Reportar el accidente a su manager inmediatamente, por leve que sea.
+2. El manager notifica a RRHH dentro de las 2 horas siguientes.
+3. RRHH gestiona el reporte ante la aseguradora de riesgos laborales.
+4. Se completa el formulario de investigación de accidente dentro de las 48 horas.
+
+La empresa no tolerará represalias contra colaboradores que reporten accidentes de trabajo.
+
+### Artículo 12 — Bienestar Mental
+
+TechCorp reconoce la salud mental como parte integral del bienestar laboral:
+
+- El programa EAP (Employee Assistance Program) ofrece hasta 8 sesiones de atención psicológica gratuita y confidencial por año.
+- Los managers reciben capacitación anual en primeros auxilios psicológicos.
+- Existe una política de desconexión digital que prohíbe enviar mensajes de trabajo después de las 20:00 y en fines de semana, salvo urgencias.
+- Se realizan encuestas de clima laboral trimestrales cuyos resultados son públicos para todos.
+
+---
+
+## TÍTULO VI: PROPIEDAD INTELECTUAL
+
+### Artículo 13 — Titularidad de la Propiedad Intelectual
+
+Todo trabajo, código, diseño, invención, metodología o creación intelectual desarrollada por el colaborador en el ejercicio de sus funciones o usando recursos de la empresa pertenece a TechCorp S.A.
+
+Esta disposición aplica incluso si el trabajo fue realizado fuera del horario laboral, siempre que esté relacionado con las actividades de la empresa.
+
+### Artículo 14 — Proyectos Personales
+
+Los colaboradores pueden desarrollar proyectos personales (side projects) siempre que:
+
+- No compitan directamente con el negocio de TechCorp
+- No utilicen recursos, tiempo laboral ni información de la empresa
+- No representen un conflicto de interés
+- Sean declarados ante RRHH al momento de su inicio
+
+---
+
+## TÍTULO VII: USO DE REDES SOCIALES Y COMUNICACIONES
+
+### Artículo 15 — Política de Redes Sociales
+
+Los colaboradores pueden mencionar su empleador en redes sociales, con las siguientes pautas:
+
+- Incluir en el perfil: "Las opiniones expresadas son personales y no representan la posición de TechCorp".
+- No publicar información confidencial, financiera o estratégica de la empresa.
+- No hacer declaraciones que pudieran dañar la reputación de la empresa, competidores, clientes o colegas.
+- Los portavoces oficiales de la empresa ante medios son únicamente el CEO y el área de Comunicaciones.
+
+### Artículo 16 — Correo Electrónico Corporativo
+
+El correo electrónico corporativo es una herramienta de trabajo. Está prohibido utilizarlo para:
+
+- Comunicaciones personales extensas no relacionadas con el trabajo
+- Suscripciones a servicios no autorizados
+- Almacenamiento de archivos personales de gran tamaño
+- Reenvío masivo de contenidos no relacionados con el trabajo
+
+---
+
+*Reglamento Interno de Trabajo — TechCorp S.A.*
+*Vigencia: Enero 2025 | Aprobado por: Dirección General y Comité Legal*
+*Para consultas: hr@techcorp.com o Ext. 2100*

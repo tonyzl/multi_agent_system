@@ -1,0 +1,228 @@
+# MANUAL DE POLÍTICAS DE RECURSOS HUMANOS — TECHCORP S.A.
+
+## BIENVENIDA
+
+Bienvenido/a a TechCorp S.A. Este manual contiene las políticas y procedimientos de Recursos Humanos que rigen nuestra relación laboral. Es importante leerlo, comprender su contenido y conservarlo como referencia.
+
+---
+
+## CAPÍTULO 1: CONTRATACIÓN Y ONBOARDING
+
+### 1.1 Proceso de Contratación
+
+El proceso de contratación de TechCorp consta de cinco etapas principales:
+
+1. Solicitud de empleo y revisión de CV
+2. Entrevista telefónica o virtual de preselección (30 minutos)
+3. Prueba técnica o assessment según el rol
+4. Entrevista presencial con el equipo directo y RRHH
+5. Verificación de referencias laborales y antecedentes
+
+El período de decisión habitual es de 7 a 15 días hábiles desde la primera entrevista. Todos los candidatos reciben retroalimentación al finalizar el proceso, sea cual sea el resultado.
+
+### 1.2 Documentos Requeridos para el Ingreso
+
+Al momento del ingreso, el colaborador debe entregar los siguientes documentos:
+
+- Copia de documento de identidad vigente
+- Número de Seguro Social o equivalente
+- Datos bancarios para depósito de nómina
+- Título universitario o certificados de formación (según el rol)
+- Carta de recomendación de empleo anterior (opcional pero valorada)
+- Examen médico de ingreso (coordinado por RRHH)
+
+### 1.3 Período de Prueba
+
+Todo colaborador nuevo tiene un período de prueba de 90 días calendario. Durante este período:
+
+- El colaborador recibe acompañamiento de un buddy o mentor asignado
+- Se realizan tres check-ins formales: día 30, día 60 y día 90
+- El gerente directo emite una evaluación escrita al finalizar el período
+- Si la evaluación es satisfactoria, se confirma la contratación definitiva
+
+### 1.4 Proceso de Onboarding
+
+El programa de onboarding tiene una duración de dos semanas y cubre:
+
+**Semana 1:**
+- Presentación con el equipo y tour de oficinas
+- Configuración de herramientas (laptop, email, Slack, accesos)
+- Sesión de inducción con RRHH sobre políticas y beneficios
+- Reunión con el gerente directo para definir objetivos del período de prueba
+
+**Semana 2:**
+- Capacitaciones técnicas específicas del área
+- Shadowing con miembros del equipo
+- Presentación del producto/servicio de la empresa
+- Definición de OKRs para los primeros 90 días
+
+---
+
+## CAPÍTULO 2: COMPENSACIÓN Y BENEFICIOS
+
+### 2.1 Estructura Salarial
+
+Los salarios en TechCorp se estructuran en bandas según nivel y área:
+
+| Nivel | Denominación | Rango Mensual (USD) |
+|-------|-------------|---------------------|
+| 1 | Junior | 1,200 – 2,000 |
+| 2 | Semi-Senior | 2,000 – 3,500 |
+| 3 | Senior | 3,500 – 5,500 |
+| 4 | Lead/Especialista | 5,500 – 8,000 |
+| 5 | Manager | 7,000 – 12,000 |
+| 6 | Director | 11,000 – 18,000 |
+
+Las revisiones salariales se realizan anualmente en enero, coincidiendo con el ciclo de evaluación de desempeño.
+
+### 2.2 Bonos y Compensación Variable
+
+La empresa cuenta con un esquema de compensación variable basado en desempeño:
+
+- **Bono anual de desempeño:** Del 5% al 20% del salario anual bruto, según calificación
+- **Bono por proyecto:** Aplicable a proyectos de alto impacto con criterios definidos previamente
+- **Comisiones:** Para roles de ventas, según tabla de comisiones del área comercial
+
+Los bonos se pagan en la nómina del mes de marzo, correspondientes al desempeño del año anterior.
+
+### 2.3 Beneficios Corporativos
+
+TechCorp ofrece los siguientes beneficios a todos los colaboradores de tiempo completo:
+
+**Salud y Bienestar:**
+- Seguro médico privado para el colaborador y grupo familiar (cónyuge e hijos hasta 25 años)
+- Seguro dental y de visión incluido en el plan médico
+- Subsidio del 50% para membresía de gimnasio (hasta USD 50/mes)
+- Programa EAP (Employee Assistance Program) de apoyo psicológico confidencial
+
+**Tiempo Libre:**
+- 15 días hábiles de vacaciones anuales pagadas (escalan a 20 al 5to año)
+- 12 días de licencia por enfermedad al año
+- 3 días de permiso por duelo familiar
+- Licencia de maternidad: 18 semanas pagadas
+- Licencia de paternidad: 4 semanas pagadas
+- 1 día libre en el cumpleaños del colaborador
+
+**Educación y Desarrollo:**
+- Subsidio de $1,500 USD anuales para cursos, certificaciones o posgrados
+- Acceso gratuito a plataformas de aprendizaje (Coursera, Udemy, Pluralsight)
+- Tiempo protegido de 2 horas semanales para formación
+
+**Flexibilidad:**
+- Modalidad híbrida: 3 días presenciales, 2 días remotos (según área)
+- Horario flexible con banda fija de 10:00 a 16:00
+- Posibilidad de trabajo remoto extendido hasta 4 semanas al año desde el exterior
+
+---
+
+## CAPÍTULO 3: VACACIONES Y PERMISOS
+
+### 3.1 Política de Vacaciones
+
+Las vacaciones deben solicitarse con al menos 15 días de anticipación a través del sistema HRIS (Workday). Para períodos mayores a 10 días hábiles, la anticipación mínima es de 30 días.
+
+El período preferente para vacaciones es entre julio y agosto y entre el 24 de diciembre y el 3 de enero. Sin embargo, la empresa garantiza que todos los colaboradores puedan tomar sus días independientemente de la temporada.
+
+Las vacaciones no tomadas durante el año no se acumulan automáticamente. Sin embargo, es posible solicitar hasta 5 días de prórroga con aprobación gerencial, los cuales deben tomarse antes del 31 de marzo del año siguiente.
+
+### 3.2 Tipos de Licencia
+
+**Licencia médica:**
+Los primeros 3 días de incapacidad son cubiertos por la empresa al 100%. A partir del día 4, la cobertura es por seguridad social según la legislación local. Se requiere certificado médico para cualquier ausencia mayor a 1 día.
+
+**Licencia sin goce de sueldo:**
+Puede solicitarse por motivos personales excepcionales por un período de hasta 30 días. Requiere aprobación del gerente y del Director de RRHH. La solicitud debe presentarse con 30 días de anticipación.
+
+**Permisos especiales:**
+- Matrimonio: 5 días hábiles
+- Nacimiento de hijo: ya cubierto por licencia de paternidad
+- Mudanza: 1 día hábil (una vez al año)
+- Exámenes universitarios: hasta 2 días por examen, máximo 6 días al año
+
+---
+
+## CAPÍTULO 4: DESEMPEÑO Y DESARROLLO
+
+### 4.1 Ciclo de Evaluación de Desempeño
+
+TechCorp aplica un ciclo de evaluación de 360° con la siguiente estructura:
+
+- **Check-in trimestral (Q1, Q2, Q3, Q4):** Reunión informal de 30 min con el gerente para revisar avance de OKRs
+- **Evaluación semestral (junio y diciembre):** Evaluación formal con formulario estructurado
+- **Evaluación anual (diciembre):** Evaluación completa 360° que determina bono y ajuste salarial
+
+Los criterios de evaluación son:
+1. Logro de OKRs (40% del puntaje)
+2. Competencias técnicas del rol (30%)
+3. Valores y comportamientos culturales (20%)
+4. Colaboración e impacto en el equipo (10%)
+
+### 4.2 Planes de Carrera
+
+Cada colaborador tiene derecho a una sesión anual de planificación de carrera con RRHH. En esta sesión se diseña un plan personalizado que incluye:
+
+- Mapa de competencias actuales vs. requeridas para el siguiente nivel
+- Proyectos de desarrollo y exposición
+- Mentores recomendados
+- Capacitaciones específicas del gap identificado
+
+Los ascensos se procesan en el ciclo de enero o en julio si hay una vacante o necesidad justificada.
+
+---
+
+## CAPÍTULO 5: CÓDIGO DE CONDUCTA
+
+### 5.1 Valores Corporativos
+
+TechCorp se rige por los siguientes valores:
+
+- **Integridad:** Actuamos con honestidad, transparencia y ética en todas nuestras acciones
+- **Innovación:** Cuestionamos el status quo y buscamos mejores formas de hacer las cosas
+- **Colaboración:** Creemos que los mejores resultados se logran trabajando juntos
+- **Orientación al cliente:** Las decisiones que tomamos parten de las necesidades de nuestros clientes
+- **Inclusión:** Respetamos y valoramos la diversidad en todas sus formas
+
+### 5.2 Política Contra el Acoso y Discriminación
+
+TechCorp tiene política de cero tolerancia frente a cualquier forma de acoso laboral, sexual o discriminación. Esto incluye:
+
+- Acoso verbal, físico o psicológico
+- Discriminación por género, raza, religión, orientación sexual, discapacidad, edad o cualquier otra condición
+- Bullying o intimidación en cualquier formato, incluyendo canales digitales
+
+Cualquier colaborador que experimente o sea testigo de conductas inapropiadas debe reportarlas a través del canal confidencial de ética (ethics@techcorp.com) o directamente con el Director de RRHH. Las denuncias son tratadas con absoluta confidencialidad y sin represalias.
+
+### 5.3 Política de Conflicto de Interés
+
+Los colaboradores deben declarar cualquier situación que pueda representar un conflicto de interés, incluyendo:
+
+- Relaciones de negocios con proveedores o clientes de la empresa
+- Participación en empresas competidoras o relacionadas
+- Relaciones familiares con otros colaboradores en la misma línea de reporte
+
+---
+
+## CAPÍTULO 6: DESVINCULACIÓN
+
+### 6.1 Renuncia Voluntaria
+
+El preaviso mínimo de renuncia es de 15 días hábiles para posiciones junior/semi-senior y de 30 días para posiciones senior en adelante. Se solicita respetar este plazo para garantizar una transición ordenada.
+
+### 6.2 Proceso de Offboarding
+
+Al momento de la desvinculación se realiza:
+
+- Entrevista de salida con RRHH (confidencial y voluntaria)
+- Devolución de equipos y activos de la empresa
+- Revocación de accesos a sistemas
+- Liquidación final según legislación aplicable
+- Carta de recomendación (a solicitud del colaborador, si la evaluación fue satisfactoria)
+
+### 6.3 Liquidación Final
+
+La liquidación se paga dentro de los 5 días hábiles posteriores al último día de trabajo e incluye: salario del período trabajado, proporcional de vacaciones no tomadas, proporcional de gratificaciones, y cualquier bono pendiente de pago.
+
+---
+
+*Versión 3.2 — Aprobado por Dirección de RRHH — Enero 2025*
+*Para consultas: hr@techcorp.com | Ext. 2100*

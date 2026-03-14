@@ -1,0 +1,176 @@
+# POLÍTICAS Y PROCEDIMIENTOS FINANCIEROS — TECHCORP S.A.
+
+## SECCIÓN 1: GASTOS CORPORATIVOS Y REEMBOLSOS
+
+### 1.1 Política General de Gastos
+
+TechCorp confía en el buen juicio de sus colaboradores para gestionar los gastos corporativos. La regla general es: **¿Es este gasto necesario para el negocio y razonable en su monto?** Si ambas respuestas son sí, probablemente es un gasto aprobable.
+
+Todos los gastos deben reportarse dentro de los 30 días de realizados. Los gastos no reportados en ese plazo requieren aprobación del Director Financiero para ser reembolsados.
+
+### 1.2 Categorías de Gastos y Límites
+
+**Viajes de Negocio:**
+- **Vuelos domésticos:** Clase económica. Clase de negocios permitida para vuelos de más de 6 horas con aprobación del manager.
+- **Vuelos internacionales:** Clase económica. Clase de negocios para vuelos de más de 9 horas con aprobación del Director.
+- **Hospedaje:** Hasta USD 200/noche en ciudades tier-1 (NYC, SF, Londres, Madrid) y USD 150 en otras ciudades.
+- **Transporte local:** Taxi o Uber preferido sobre autos de alquiler. Uso de transporte público cuando sea práctico.
+- **Viáticos de comida:** USD 80/día en viajes internacionales, USD 60/día en viajes nacionales (incluyendo desayuno, almuerzo y cena).
+
+**Equipos y Software:**
+- Gastos de hasta USD 500: Aprobación del manager.
+- Gastos de USD 500 a USD 5,000: Aprobación del manager + Director de Área.
+- Gastos de más de USD 5,000: Aprobación del CFO.
+- Software recurrente (suscripciones): Se aprueba anualmente en el proceso de presupuesto.
+
+**Entretenimiento de Clientes:**
+- Comidas con clientes: Hasta USD 150 por persona.
+- Eventos o actividades con clientes: Requieren aprobación previa del manager.
+- Regalos corporativos: Hasta USD 100 por cliente/año, sin efectivo.
+
+**Material de Oficina y Misceláneos:**
+- Compras menores de USD 50: Sin aprobación previa (reembolsable con comprobante).
+- Compras de USD 50 a USD 200: Aprobación del manager.
+
+### 1.3 Proceso de Reembolso
+
+Los reembolsos se gestionan a través de **Expensify**:
+
+1. Descarga la app Expensify o accede en app.expensify.com
+2. Toma foto del comprobante o sube el PDF
+3. Categoriza el gasto correctamente
+4. Agrega descripción del propósito de negocio
+5. Envía para aprobación del manager
+6. El manager tiene 5 días hábiles para aprobar
+7. Contabilidad procesa el reembolso en la siguiente nómina o en 5 días hábiles si es urgente
+
+**Comprobantes requeridos:** Siempre se requiere factura o recibo para cualquier gasto mayor a USD 25. Para gastos menores se acepta captura de pantalla de la transacción.
+
+---
+
+## SECCIÓN 2: TARJETAS CORPORATIVAS
+
+### 2.1 Elegibilidad
+
+Las tarjetas corporativas se otorgan a:
+- Directores y Managers (automáticamente)
+- Colaboradores que viajan frecuentemente (más de 4 viajes al año)
+- Roles que requieren gastos regulares con clientes
+
+Para solicitar una tarjeta, completa el formulario en Workday > Finanzas > Solicitar Tarjeta Corporativa.
+
+### 2.2 Uso de la Tarjeta
+
+La tarjeta corporativa es exclusivamente para gastos de negocio. Usos permitidos: viajes de negocio, comidas con clientes, software y herramientas de trabajo, material de oficina, y eventos corporativos.
+
+Usos **no permitidos:** Gastos personales de cualquier tipo, efectivo (cash advance), regalos para colaboradores de la misma empresa, alcohol sin contexto de cliente, y gastos que excedan los límites de la política sin aprobación previa.
+
+### 2.3 Reporte Mensual de Tarjeta
+
+Cada colaborador con tarjeta corporativa debe:
+- Reconciliar los gastos mensualmente en Expensify antes del día 5 del mes siguiente
+- Adjuntar comprobante a cada transacción
+- Categorizar cada gasto correctamente
+- Resolver cualquier cargo no reconocido con el equipo de Finanzas antes del cierre
+
+Los gastos de tarjeta no justificados serán cobrados directamente al colaborador.
+
+---
+
+## SECCIÓN 3: PRESUPUESTO Y PLANIFICACIÓN FINANCIERA
+
+### 3.1 Ciclo de Presupuesto Anual
+
+El proceso de presupuesto anual (Annual Planning) se realiza entre octubre y noviembre para el año siguiente:
+
+**Octubre:**
+- Finanzas envía las plantillas de presupuesto a cada área
+- Los managers reciben los datos históricos del año en curso
+- Cada área define sus iniciativas estratégicas para el año siguiente
+
+**Noviembre:**
+- Los managers presentan su propuesta de presupuesto al Director de Área
+- Se realizan reuniones de calibración entre áreas
+- El equipo de Finanzas consolida y presenta al C-Level
+
+**Diciembre:**
+- El presupuesto aprobado se carga en el sistema ERP (SAP)
+- Los managers reciben confirmación de su presupuesto para el año siguiente
+- Se establece el ritmo de revisiones mensuales
+
+### 3.2 Revisiones Presupuestarias
+
+**Monthly Business Review (MBR):**
+El primer lunes de cada mes, los directores presentan al CFO la ejecución presupuestaria del mes anterior. Se revisan: gastos vs. presupuesto, forecast del año, y solicitudes de reasignación de partidas.
+
+**Quarterly Business Review (QBR):**
+Al final de cada trimestre, se realiza una revisión más profunda que incluye análisis de desviaciones, reforecast del año y ajustes de prioridades.
+
+### 3.3 Solicitudes de Presupuesto Adicional
+
+Si necesitas recursos que no estaban en el presupuesto aprobado:
+
+1. Completa el formulario "Budget Exception Request" en Confluence > Finance > Formularios
+2. Incluye: justificación de negocio, monto solicitado, impacto esperado, y propuesta de dónde reasignar (si aplica)
+3. El formulario requiere aprobación del Director de Área y del CFO
+4. Las solicitudes menores de USD 10,000 tienen un proceso acelerado (respuesta en 2 días)
+
+---
+
+## SECCIÓN 4: PROVEEDORES Y COMPRAS
+
+### 4.1 Proceso de Alta de Proveedor
+
+Para contratar a un proveedor nuevo, el proceso es:
+
+1. **Búsqueda y selección:** Para contratos mayores a USD 50,000, se requiere al menos 3 cotizaciones comparativas.
+2. **Evaluación legal y compliance:** El proveedor completa un cuestionario de debida diligencia (accesible en el portal de proveedores).
+3. **Aprobación:** El Gerente de Procurement y el área solicitante aprueban la selección.
+4. **Contrato:** Legal prepara o revisa el contrato (mínimo para servicios mayores a USD 5,000 anuales).
+5. **Alta en SAP:** Procurement da de alta al proveedor en el sistema para que pueda facturar.
+
+### 4.2 Proceso de Aprobación de Facturas
+
+Las facturas de proveedores se procesan así:
+
+1. El proveedor envía la factura a invoices@techcorp.com (no a correos personales)
+2. El sistema OCR de SAP procesa la factura automáticamente
+3. El manager del área correspondiente recibe alerta para aprobar en 3 días hábiles
+4. Contabilidad verifica el matching con el PO (Purchase Order)
+5. El pago se procesa según los términos acordados (Net 30 estándar)
+
+### 4.3 Contratación de Freelancers y Consultores
+
+Para contratar servicios freelance o de consultoría:
+
+- **Hasta USD 3,000:** El manager puede contratar directamente con contrato simple (template en Confluence)
+- **USD 3,000 a USD 15,000:** Requiere también aprobación del Director de Área y firma de contrato por Legal
+- **Más de USD 15,000:** Proceso de procurement completo con 3 cotizaciones
+
+Los freelancers siempre deben firmar un acuerdo de confidencialidad (NDA) antes de comenzar cualquier trabajo.
+
+---
+
+## SECCIÓN 5: REPORTES FINANCIEROS
+
+### 5.1 Reportes Disponibles para Managers
+
+Los managers tienen acceso a los siguientes reportes en tiempo real vía el portal financiero (finance.techcorp.com):
+
+- **Budget vs. Actual:** Comparación de presupuesto aprobado vs. gasto real por línea presupuestaria
+- **Expense Report:** Detalle de todos los gastos del área, con drill-down por colaborador y categoría
+- **Headcount Report:** Costo de nómina del área vs. presupuesto
+- **Procurement Status:** Estado de solicitudes de compra y contratos activos
+
+### 5.2 Cierre Contable Mensual
+
+El cierre contable se realiza los primeros 5 días hábiles del mes siguiente. Durante este período:
+
+- No se procesan nuevos pagos (excepto urgentes con aprobación del CFO)
+- Los managers reciben solicitudes de aclaraciones sobre gastos del mes anterior
+- Se publican los resultados financieros preliminares del mes
+
+---
+
+*Política Financiera v2.1 — Aprobado por CFO — Febrero 2025*
+*Consultas: finance@techcorp.com | Ext. 4000*

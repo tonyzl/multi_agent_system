@@ -1,0 +1,228 @@
+# ESTÁNDARES DE ARQUITECTURA Y DESARROLLO — TECHCORP ENGINEERING
+
+## 1. PRINCIPIOS DE ARQUITECTURA
+
+### 1.1 Filosofía de Diseño
+
+TechCorp sigue los principios de arquitectura de microservicios con las siguientes directrices:
+
+**Domain-Driven Design (DDD):**
+Los servicios se organizan por dominios de negocio, no por capas técnicas. Cada dominio tiene un equipo responsable que actúa como "dueño" del servicio. Los dominios actuales son: Autenticación, Usuarios, Pagos, Notificaciones, Analytics, y Contenido.
+
+**Comunicación entre Servicios:**
+- Comunicación síncrona: REST/gRPC para operaciones que requieren respuesta inmediata
+- Comunicación asíncrona: Kafka para eventos de negocio y operaciones que pueden procesarse en background
+- Evitar llamadas sincrónicas en cadena (más de 3 hops es un anti-patrón)
+
+**API First:**
+Toda funcionalidad nueva comienza con el diseño de la API (contrato de interfaz) antes de la implementación. El contrato se documenta en OpenAPI 3.1 y se revisa con los equipos consumidores antes de codificar.
+
+### 1.2 Patrones de Diseño Preferidos
+
+**Patrones recomendados:**
+- Repository Pattern para acceso a datos
+- CQRS para servicios con alta carga de lectura/escritura
+- Outbox Pattern para garantizar consistencia eventual en eventos de Kafka
+- Circuit Breaker (via Resilience4j o similar) para llamadas entre servicios
+- Retry con exponential backoff para operaciones con fallos transitorios
+
+**Anti-patrones a evitar:**
+- God Objects / God Services (responsabilidad única)
+- Acoplamiento directo a implementaciones concretas (usar abstracciones)
+- Secrets hardcodeados en código (usar AWS Secrets Manager / 1Password)
+- Queries N+1 en bases de datos relacionales
+
+---
+
+## 2. ESTÁNDARES DE CÓDIGO
+
+### 2.1 Python
+
+**Configuración obligatoria de proyecto:**
+- Python 3.11+ con pyenv para gestión de versiones
+- Poetry para gestión de dependencias (no pip directo)
+- Formateo: Black + isort (configurados en pyproject.toml)
+- Linting: Ruff (reemplaza flake8, pylint, y otros)
+- Type hints: obligatorios en todas las funciones públicas (mypy en modo strict)
+- Testing: pytest con cobertura mínima del 80%
+
+**Estructura de proyecto FastAPI:**
+```
+my_service/
+├── src/
+│   ├── api/          # Routers y schemas Pydantic
+│   ├── domain/       # Lógica de negocio y entidades
+│   ├── infrastructure/  # BD, cache, clientes externos
+│   └── core/         # Config, seguridad, dependencias
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── pyproject.toml
+├── Dockerfile
+└── README.md
+```
+
+### 2.2 TypeScript / Node.js
+
+**Configuración obligatoria:**
+- TypeScript 5+ con modo strict habilitado
+- ESLint + Prettier para formateo y linting
+- pnpm como gestor de paquetes (no npm ni yarn)
+- Jest para testing unitario, Playwright para E2E
+- Husky + lint-staged para pre-commit hooks
+
+**Naming conventions:**
+- Variables y funciones: camelCase
+- Clases e interfaces: PascalCase
+- Constantes: UPPER_SNAKE_CASE
+- Archivos: kebab-case
+
+### 2.3 Estándares de Testing
+
+Todos los proyectos deben tener tres niveles de tests:
+
+**Unit Tests:**
+- Cobertura mínima: 80% del código de lógica de negocio
+- Sin dependencias externas (usar mocks/stubs)
+- Velocidad: suite completa en menos de 30 segundos
+
+**Integration Tests:**
+- Testean la integración con bases de datos y servicios externos
+- Usan contenedores Docker temporales (test containers)
+- Se ejecutan en CI pero no en pre-commit hook
+
+**E2E Tests:**
+- Cubren los happy paths críticos del negocio
+- Se ejecutan en el ambiente de staging antes del deploy a producción
+- Usan Playwright para interfaces web
+
+---
+
+## 3. INFRAESTRUCTURA Y CI/CD
+
+### 3.1 Arquitectura AWS
+
+**Regiones activas:**
+- Primaria: us-east-1 (Virginia)
+- Secundaria (DR): eu-west-1 (Irlanda)
+
+**Cuentas AWS (separación de ambientes):**
+- `techcorp-prod`: Producción. Acceso muy restringido.
+- `techcorp-staging`: Staging/QA. Reflejo de producción.
+- `techcorp-dev`: Desarrollo. Mayor libertad de acceso.
+- `techcorp-security`: Herramientas de seguridad y logging centralizado.
+
+**Servicios clave en uso:**
+- Compute: EKS (Kubernetes), Lambda para serverless
+- Storage: S3, RDS Aurora PostgreSQL, ElastiCache (Redis)
+- Networking: VPC, ALB, CloudFront, Route53
+- Messaging: SQS, SNS, MSK (Kafka administrado)
+- AI/ML: SageMaker, Bedrock
+
+### 3.2 Pipeline de CI/CD
+
+Cada repositorio tiene un pipeline de GitHub Actions con los siguientes stages:
+
+**Stage 1 — Validación (en cada push):**
+- Lint y formateo
+- Compilación / verificación de tipos
+- Unit tests
+- Análisis de seguridad (Snyk + Trivy para imágenes Docker)
+
+**Stage 2 — Build (en PR a main):**
+- Build de imagen Docker
+- Push a ECR (Amazon Elastic Container Registry)
+- Integration tests
+
+**Stage 3 — Deploy a Staging (en merge a main):**
+- Deploy automático a staging via ArgoCD
+- E2E tests contra staging
+- Smoke tests automatizados
+
+**Stage 4 — Deploy a Producción (tag de versión):**
+- Requiere aprobación manual de Tech Lead
+- Deploy con estrategia Canary (5% → 25% → 100% del tráfico)
+- Monitoreo automático de error rate durante el rollout
+- Rollback automático si error rate supera umbral
+
+### 3.3 Observabilidad
+
+**Golden Signals monitoreados:**
+- Latency: P50, P95, P99 de todas las APIs
+- Traffic: Requests por segundo
+- Errors: Tasa de errores 4xx y 5xx
+- Saturation: CPU, memoria, disco
+
+**Alertas:**
+Las alertas están configuradas en PagerDuty con dos severidades:
+- **P1 (Crítico):** Afecta usuarios en producción. Alerta inmediata al on-call.
+- **P2 (Alto):** Degradación de servicio. Alerta en 5 minutos al equipo.
+
+El equipo de ingeniería rota el on-call semanalmente. El on-call recibe una compensación adicional de USD 50 por semana de guardia.
+
+---
+
+## 4. SEGURIDAD EN DESARROLLO (DevSecOps)
+
+### 4.1 Revisión de Seguridad en el SDLC
+
+La seguridad se integra en cada etapa del desarrollo:
+
+- **Diseño:** Threat modeling para features de alto impacto (autenticación, pagos, datos personales)
+- **Código:** Análisis estático (Semgrep, CodeQL en GitHub)
+- **Build:** Escaneo de vulnerabilidades en dependencias (Snyk) y en imágenes Docker (Trivy)
+- **Deploy:** Políticas de seguridad de Kubernetes (OPA Gatekeeper)
+- **Runtime:** Detección de anomalías (Falco, CrowdStrike)
+
+### 4.2 Manejo de Secretos
+
+**Reglas absolutas:**
+- NUNCA hardcodear secretos en código, commits, ni comentarios
+- NUNCA compartir secretos por Slack, email, o canales no cifrados
+- Todos los secretos van en AWS Secrets Manager o Parameter Store
+- Las aplicaciones acceden a secretos via SDK, nunca via variables de entorno planas en producción
+
+**Rotación de secretos:**
+- Credenciales de bases de datos: rotan automáticamente cada 30 días
+- API keys de terceros: rotan manualmente cada 90 días
+- Certificados TLS: renovación automática via cert-manager (Let's Encrypt)
+
+---
+
+## 5. PROCESO DE INCIDENT MANAGEMENT
+
+### 5.1 Definición de Severidades
+
+| Severidad | Impacto | Ejemplo |
+|---|---|---|
+| P1 | Servicio caído para todos los usuarios | Web caída, pagos no procesando |
+| P2 | Funcionalidad crítica degradada | Login lento, errores intermitentes |
+| P3 | Funcionalidad secundaria afectada | Reportes lentos, notificaciones tardías |
+| P4 | Bajo impacto / cosmético | Bug visual, texto incorrecto |
+
+### 5.2 Proceso de Respuesta a Incidentes
+
+1. **Detección:** Alerta automática de PagerDuty o reporte de usuario
+2. **Triaje:** El on-call evalúa y asigna severidad (5 min max)
+3. **Escalamiento:** Si P1 o P2, notificar a Tech Lead y Engineering Manager
+4. **War Room:** Canal de Slack temporal #incident-YYYY-MM-DD para coordinación
+5. **Mitigación:** Prioridad es restaurar el servicio antes que entender la causa raíz
+6. **Resolución:** Documentar en PagerDuty la causa y la solución aplicada
+7. **Post-mortem:** Obligatorio para P1 y P2. Documento blameless completado en 48 horas.
+
+### 5.3 Post-mortem blameless
+
+Los post-mortems de TechCorp siguen el principio de que los incidentes son fallas del sistema, no errores de personas. La estructura del documento incluye:
+
+- Timeline del incidente
+- Causa raíz (5 Whys)
+- Impacto cuantificado (usuarios afectados, ingresos perdidos si aplica)
+- Acciones correctivas con dueño y fecha de cierre
+- Aprendizajes del equipo
+
+---
+
+*Estándares de Ingeniería — TechCorp Engineering Excellence Team*
+*Revisión: trimestral | Última actualización: Enero 2025*
+*Preguntas: #engineering-standards en Slack*

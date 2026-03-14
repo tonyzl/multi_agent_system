@@ -1,0 +1,208 @@
+# GUÍA DE PLANIFICACIÓN FINANCIERA, MÉTRICAS SaaS Y CONTROLES — TECHCORP
+
+## PARTE 1: PROCESO DE PRESUPUESTO DETALLADO
+
+### 1.1 Metodología de Presupuestación
+
+TechCorp usa una metodología de presupuesto basada en Zero-Based Budgeting (ZBB) combinada con un análisis top-down del CFO:
+
+**Zero-Based Budgeting (ZBB):** Cada área justifica su presupuesto desde cero cada año, sin asumir que el presupuesto del año anterior es la base. Esto obliga a priorizar y eliminar gastos que ya no generan valor.
+
+**Ajuste top-down:** El CFO define primero los targets de margen operativo y crecimiento para el año. Las áreas construyen sus presupuestos dentro de esos parámetros.
+
+**Reconciliación:** Las diferencias entre el bottom-up de las áreas y el top-down del CFO se resuelven en sesiones de calibración en noviembre.
+
+### 1.2 Categorías de Gasto y Drivers
+
+Para elaborar tu presupuesto, piensa en los siguientes drivers por categoría:
+
+**Headcount (60-70% del presupuesto total):**
+- Número de FTEs planificados por trimestre (considera fechas de ingreso)
+- Incrementos salariales de la revisión de enero
+- Bonos y compensación variable
+- Costo de beneficios (aproximadamente 20-25% adicional sobre el salario bruto)
+- Costo de reclutamiento (honorarios de agencias, job boards, referidos)
+
+**Software y Herramientas (10-15%):**
+- Suscripciones existentes con escalada de precios acordada
+- Nuevas herramientas planificadas con fecha de inicio
+- Licencias por usuario que escalan con el crecimiento de equipo
+
+**Viajes y Entretenimiento (3-5%):**
+- Número de viajes de negocio planificados por trimestre
+- Eventos de equipo y team buildings
+- Conferencias y eventos de industria
+
+**Servicios Profesionales (5-10%):**
+- Consultores y freelancers recurrentes
+- Honorarios legales y contables
+- Auditoría externa (presupuestada desde el equipo de Finanzas)
+
+### 1.3 Herramientas de Modelado Financiero
+
+TechCorp utiliza las siguientes herramientas para el modelado financiero:
+
+- **Anaplan:** Para el proceso de Annual Planning y la consolidación de presupuestos de todas las áreas. Acceso a los Business Partners Financieros y a los Directores de Área.
+- **Google Sheets / Excel:** Para modelos ad-hoc de análisis y sensibilidades. Los modelos de más de $50,000 en decisiones deben ser revisados por Finanzas.
+- **Looker:** Para reportes de seguimiento en tiempo real. El dashboard de Budget vs. Actual está disponible para todos los managers.
+
+---
+
+## PARTE 2: MÉTRICAS SAAS Y ANÁLISIS DE NEGOCIO
+
+### 2.1 Métricas de Revenue
+
+**MRR (Monthly Recurring Revenue):**
+El MRR es la métrica más importante para un negocio SaaS. Se calcula como:
+`MRR = Suma de todos los ingresos recurrentes mensuales de suscripciones activas`
+
+El MRR se descompone en:
+- **New MRR:** Ingresos de clientes nuevos en el mes
+- **Expansion MRR:** Ingresos adicionales de clientes existentes que expandieron su plan (upsell/cross-sell)
+- **Contraction MRR:** Reducción de ingresos de clientes que bajaron de plan (downgrade)
+- **Churn MRR:** Ingresos perdidos por clientes que cancelaron
+
+**ARR (Annual Recurring Revenue):**
+`ARR = MRR × 12`
+
+El ARR es la métrica principal que se comunica a inversores y en reportes estratégicos.
+
+### 2.2 Métricas de Retención
+
+**Net Revenue Retention (NRR):**
+Mide cuánto del MRR de los clientes del mes anterior se retiene y crece al mes siguiente:
+`NRR = (MRR inicio + Expansion MRR - Contraction MRR - Churn MRR) / MRR inicio × 100`
+
+Un NRR > 100% significa que la empresa crece incluso sin adquirir nuevos clientes. Meta de TechCorp: >115%.
+
+**Gross Revenue Retention (GRR):**
+Similar al NRR pero sin incluir la expansión:
+`GRR = (MRR inicio - Contraction MRR - Churn MRR) / MRR inicio × 100`
+
+El GRR nunca puede superar el 100%. Mide la calidad de la retención pura.
+
+**Churn Rate (tasa de cancelación):**
+`Churn Rate Mensual = Clientes que cancelaron en el mes / Clientes al inicio del mes`
+
+TechCorp mide tanto el churn por número de clientes (logo churn) como por ingresos (revenue churn).
+
+### 2.3 Métricas de Eficiencia de Ventas
+
+**CAC (Customer Acquisition Cost):**
+`CAC = (Gasto en Ventas + Gasto en Marketing del período) / Nuevos clientes adquiridos`
+
+**LTV (Lifetime Value):**
+`LTV = ARPA / Churn Rate Mensual`
+Donde ARPA (Average Revenue Per Account) = MRR Total / Número de cuentas activas.
+
+**LTV/CAC Ratio:**
+Indica cuánto vale un cliente comparado con lo que costó adquirirlo. La regla del sector: >3x es saludable. Meta TechCorp: >4x.
+
+**CAC Payback Period:**
+`CAC Payback = CAC / (ARPA × Gross Margin)`
+Mide en cuántos meses se recupera el costo de adquirir un cliente. Meta TechCorp: < 18 meses.
+
+### 2.4 Métricas de Eficiencia Operativa
+
+**Magic Number (eficiencia de ventas):**
+`Magic Number = Net New ARR en el trimestre / Gasto en S&M del trimestre anterior × 4`
+
+Un Magic Number >1.0 indica alta eficiencia. Entre 0.5 y 1.0 es aceptable. <0.5 sugiere invertir más selectivamente.
+
+**Rule of 40:**
+La regla de los 40 combina crecimiento de ARR y margen EBITDA:
+`Rule of 40 Score = Growth Rate % + EBITDA Margin %`
+
+Un score ≥ 40 indica un negocio SaaS saludable. TechCorp meta: ≥ 45 para 2025.
+
+---
+
+## PARTE 3: CONTROLES FINANCIEROS DETALLADOS
+
+### 3.1 Matriz de Autorización de Gastos
+
+La siguiente tabla resume quién puede aprobar qué:
+
+| Monto | Aprobador | Canal |
+|-------|-----------|-------|
+| < USD 500 | Manager directo | Expensify / Workday |
+| USD 500 – 5,000 | Manager + Director de Área | Expensify + email |
+| USD 5,000 – 25,000 | Director de Área + CFO | SAP Purchase Order |
+| USD 25,000 – 100,000 | CFO + CEO | SAP + Contrato |
+| > USD 100,000 | Board approval | Proceso formal de M&A/Inversiones |
+
+Esta matriz aplica para gastos de OPEX. Los gastos de CAPEX (activos) tienen su propia política en el Manual de Activos Fijos.
+
+### 3.2 Controles de Nómina
+
+Los controles de nómina incluyen:
+
+**Control de altas y bajas:** Solo RRHH puede crear o inactivar empleados en Workday. El equipo de Nómina no puede hacer modificaciones sin autorización de RRHH.
+
+**Control de cambios salariales:** Los cambios salariales requieren autorización por escrito del manager y del Director de RRHH antes de ser procesados.
+
+**Revisión de nómina:** El Controller revisa el reporte comparativo de nómina mes a mes antes de autorizar el pago. Las variaciones >3% en el total son explicadas por escrito.
+
+**Segregación:** Quien procesa la nómina (Nómina) es distinto de quien la autoriza (Controller) y de quien la registra contablemente (Contabilidad).
+
+### 3.3 Proceso de Cierre Mensual
+
+El cierre contable mensual sigue este calendario:
+
+**Días -3 a 0 (últimos días del mes):**
+- Corte de documentos: los proveedores deben enviar facturas antes del día 25 para ser incluidas en el mes
+- Los managers cierran sus reportes de gastos en Expensify
+
+**Días 1-2 del mes siguiente:**
+- Conciliación bancaria
+- Registro de accruals (gastos devengados no facturados)
+- Amortización de prepagos y gastos diferidos
+
+**Días 3-4:**
+- Revisión y aprobación de los estados financieros preliminares
+- Conciliación de cuentas intercompany (si aplica)
+
+**Día 5:**
+- Publicación del P&L mensual a los directores
+- Actualización del Board Pack si es fin de trimestre
+
+---
+
+## PARTE 4: GESTIÓN DE RIESGOS FINANCIEROS
+
+### 4.1 Riesgos Identificados y Controles
+
+TechCorp ha identificado los siguientes riesgos financieros principales:
+
+**Riesgo de liquidez:** 
+El riesgo de no tener suficiente efectivo para operar.
+Control: Mantener un mínimo de 6 meses de gastos operativos en efectivo. El CFO monitorea el runway semanalmente.
+
+**Riesgo de tipo de cambio:**
+TechCorp factura principalmente en USD pero tiene gastos en otras monedas (COP, EUR, MXN).
+Control: Política de cobertura natural (ingresos y gastos en la misma moneda cuando es posible). Para exposiciones grandes, se usan forward contracts aprobados por el Comité de Riesgos.
+
+**Riesgo de concentración de clientes:**
+Dependencia excesiva de pocos clientes grandes.
+Control: Alerta cuando un cliente representa >15% del ARR total. Estrategia de diversificación activa en el plan de ventas.
+
+**Riesgo de fraude interno:**
+Control: Segregación de funciones, auditorías aleatorias, canal ético, rotación de firmas bancarias.
+
+### 4.2 Seguro Corporativo
+
+TechCorp cuenta con las siguientes pólizas de seguro corporativo:
+
+- **Directors & Officers (D&O):** Protege a directivos ante demandas de terceros
+- **Errores y Omisiones (E&O):** Cubre reclamaciones de clientes por errores en el servicio
+- **Cyber Liability:** Cubre costos de brechas de seguridad y ataques cibernéticos
+- **General Liability:** Cobertura general de responsabilidad civil
+
+Los seguros se renuevan anualmente. El equipo de Legal y Finanzas coordina la renovación en octubre de cada año.
+
+---
+
+*Guía Financiera Avanzada — TechCorp Finance Team*
+*Documento confidencial — Solo para uso interno*
+*Versión 1.3 | Última actualización: Febrero 2025*
+*Contacto: finance@techcorp.com | CFO Office Ext. 4010*

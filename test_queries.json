@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "query": "¿Cuántos días de vacaciones tengo disponibles y cómo los solicito?",
+    "expected_domain": "hr",
+    "category": "vacaciones",
+    "notes": "Consulta básica de RRHH sobre política de vacaciones"
+  },
+  {
+    "id": 2,
+    "query": "¿Cómo puedo conectarme a la VPN desde casa?",
+    "expected_domain": "tech",
+    "category": "vpn_acceso",
+    "notes": "Consulta típica de soporte técnico para trabajo remoto"
+  },
+  {
+    "id": 3,
+    "query": "¿Cuál es el límite de gasto para una comida de negocios con un cliente?",
+    "expected_domain": "finance",
+    "category": "gastos_entretenimiento",
+    "notes": "Consulta sobre política de gastos con clientes"
+  },
+  {
+    "id": 4,
+    "query": "¿Qué beneficios de salud ofrece la empresa para mi familia?",
+    "expected_domain": "hr",
+    "category": "beneficios",
+    "notes": "Consulta sobre seguro médico y cobertura familiar"
+  },
+  {
+    "id": 5,
+    "query": "La laptop está muy lenta y el fan hace ruido. ¿Qué hago?",
+    "expected_domain": "tech",
+    "category": "troubleshooting_hardware",
+    "notes": "Problema técnico de hardware"
+  },
+  {
+    "id": 6,
+    "query": "¿Cómo solicito el reembolso de un gasto de viaje que hice la semana pasada?",
+    "expected_domain": "finance",
+    "category": "reembolso",
+    "notes": "Proceso de reembolso de gastos corporativos"
+  },
+  {
+    "id": 7,
+    "query": "¿Cuánto tiempo dura el período de prueba para nuevos empleados?",
+    "expected_domain": "hr",
+    "category": "onboarding",
+    "notes": "Consulta sobre proceso de incorporación"
+  },
+  {
+    "id": 8,
+    "query": "¿Qué versión de Node.js debo usar y cómo la configuro?",
+    "expected_domain": "tech",
+    "category": "desarrollo_software",
+    "notes": "Consulta de estándares de desarrollo"
+  },
+  {
+    "id": 9,
+    "query": "Necesito contratar a un freelancer para un proyecto. ¿Cuál es el proceso?",
+    "expected_domain": "finance",
+    "category": "proveedores",
+    "notes": "Proceso de contratación de freelancers y consultores"
+  },
+  {
+    "id": 10,
+    "query": "¿Cómo funciona el proceso de evaluación de desempeño anual?",
+    "expected_domain": "hr",
+    "category": "desempeno",
+    "notes": "Ciclo de evaluación de desempeño y criterios"
+  },
+  {
+    "id": 11,
+    "query": "No tengo acceso al repositorio en GitHub. ¿Qué debo hacer?",
+    "expected_domain": "tech",
+    "category": "accesos",
+    "notes": "Solicitud de acceso a herramientas de desarrollo"
+  },
+  {
+    "id": 12,
+    "query": "¿Cuál es el proceso para aprobar una factura de un proveedor?",
+    "expected_domain": "finance",
+    "category": "cuentas_por_pagar",
+    "notes": "Flujo de aprobación de facturas"
+  },
+  {
+    "id": 13,
+    "query": "¿Puedo llevar a mi pareja al plan de seguro médico si no estamos casados?",
+    "expected_domain": "hr",
+    "category": "beneficios",
+    "notes": "Caso borde: unión de hecho y elegibilidad de beneficios"
+  },
+  {
+    "id": 14,
+    "query": "¿Cuáles son las reglas de seguridad para guardar datos de clientes?",
+    "expected_domain": "tech",
+    "category": "seguridad",
+    "notes": "Política de clasificación de datos y manejo de datos sensibles"
+  },
+  {
+    "id": 15,
+    "query": "¿Cuál es el clima en Bogotá hoy?",
+    "expected_domain": "unknown",
+    "category": "fuera_de_dominio",
+    "notes": "Caso borde: pregunta completamente fuera del scope del sistema"
+  },
+  {
+    "id": 16,
+    "query": "¿Cómo reporto un incidente de producción urgente?",
+    "expected_domain": "tech",
+    "category": "incident_management",
+    "notes": "Proceso de respuesta a incidentes P1"
+  },
+  {
+    "id": 17,
+    "query": "¿Qué pasa si un proveedor me pide un pago en efectivo para agilizar algo?",
+    "expected_domain": "finance",
+    "category": "compliance",
+    "notes": "Caso borde: posible solicitud de soborno — debe activar alerta de compliance"
+  },
+  {
+    "id": 18,
+    "query": "Quiero renunciar a la empresa. ¿Cuánto tiempo de preaviso debo dar?",
+    "expected_domain": "hr",
+    "category": "offboarding",
+    "notes": "Consulta sobre proceso de renuncia voluntaria"
+  }
+]

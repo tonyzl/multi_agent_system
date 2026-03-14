@@ -1,0 +1,211 @@
+# BASE DE CONOCIMIENTO TÉCNICA — TECHCORP IT SUPPORT
+
+## SECCIÓN 1: INFRAESTRUCTURA Y ACCESOS
+
+### 1.1 Solicitud de Accesos a Sistemas
+
+Para solicitar acceso a cualquier sistema interno, usa el portal IT Self-Service: it.techcorp.com/access-request. Los accesos disponibles son:
+
+**Sistemas Corporativos de Uso General:**
+- **Google Workspace:** Email, Drive, Calendar, Meet — acceso automático al ingreso
+- **Slack:** Herramienta principal de comunicación interna
+- **Workday:** HRIS para gestión de RRHH y nómina
+- **Jira:** Gestión de proyectos y tickets de soporte
+- **Confluence:** Wiki corporativo y documentación
+
+**Sistemas con Acceso Controlado:**
+- **AWS Console:** Requiere aprobación del Tech Lead y del equipo de Seguridad
+- **Base de datos de producción:** Requiere solicitud formal con justificación de negocio
+- **Panel de administración de clientes:** Solo para equipos de Customer Success y Soporte
+- **Herramientas de analytics:** Acceso al dashboard según el rol
+
+El tiempo de procesamiento habitual es de 1 día hábil para sistemas estándar y de 3 días para accesos privilegiados.
+
+### 1.2 Gestión de Contraseñas
+
+TechCorp utiliza **1Password** como gestor de contraseñas corporativo. Todos los colaboradores deben:
+
+- Instalar 1Password en todos los dispositivos con que trabajen
+- No reutilizar contraseñas entre servicios
+- Usar contraseñas de mínimo 16 caracteres con combinación de mayúsculas, minúsculas, números y símbolos
+- Habilitar la autenticación de dos factores (2FA) en todos los sistemas que lo permitan
+
+El vault corporativo es administrado por IT. Nunca compartas credenciales con compañeros, incluso si pertenecen al mismo equipo.
+
+### 1.3 VPN Corporativa
+
+Para acceder a recursos internos desde fuera de la red de oficina debes conectarte a la VPN corporativa. TechCorp usa **Cisco AnyConnect**.
+
+Instrucciones de instalación:
+1. Descarga el cliente desde it.techcorp.com/vpn
+2. Instala siguiendo el wizard
+3. Configura el servidor: vpn.techcorp.com
+4. Autentica con tus credenciales de Google y el código 2FA
+
+**Importante:** La VPN es obligatoria para acceder a bases de datos, paneles de administración y entornos de staging/producción desde redes externas.
+
+---
+
+## SECCIÓN 2: HARDWARE Y EQUIPOS
+
+### 2.1 Equipamiento Estándar por Rol
+
+**Desarrolladores y Data Scientists:**
+- MacBook Pro 14" o 16" (M3 Pro, 18GB RAM, 512GB SSD)
+- Monitor externo 27" 4K (si trabaja presencialmente)
+- Teclado mecánico + mouse inalámbrico
+- Auriculares con cancelación de ruido (opcionales, con presupuesto del kit)
+
+**Diseño y Producto:**
+- MacBook Pro 14" (M3, 16GB RAM, 512GB SSD)
+- iPad Pro con Apple Pencil (si aplica al rol)
+- Monitor externo 27" con soporte de color calibrado
+
+**Administración y Negocio:**
+- MacBook Air 13" o 15" (M3, 16GB RAM, 256GB SSD)
+- Monitor externo 24" (si trabaja presencialmente)
+
+**Soporte y Operaciones:**
+- MacBook Air 13" (M2, 8GB RAM, 256GB SSD)
+
+### 2.2 Solicitud de Equipo
+
+El equipo se entrega el primer día laboral. Si necesitas hardware adicional o un upgrade:
+1. Crea un ticket en Jira > IT > Hardware Request
+2. Incluye la justificación de negocio
+3. El equipo de IT evaluará la solicitud en 2 días hábiles
+4. Las aprobaciones son según política de refresh (cada 3 años para laptops)
+
+### 2.3 Reporte de Daños o Pérdida
+
+Reporta inmediatamente cualquier daño, robo o pérdida de equipo corporativo a security@techcorp.com y al canal #it-emergencias en Slack. En caso de robo, también debes presentar denuncia ante autoridades y compartir el número de caso con IT.
+
+La empresa cubre reparaciones por defectos de fábrica o desgaste normal. Los daños por accidente tienen una franquicia de USD 150 a cargo del colaborador.
+
+---
+
+## SECCIÓN 3: SOFTWARE Y HERRAMIENTAS DE DESARROLLO
+
+### 3.1 Stack Tecnológico de TechCorp
+
+**Backend:**
+- Lenguajes principales: Python 3.11+, Node.js 20 LTS, Go 1.22
+- Frameworks: FastAPI, Express.js, Django REST Framework
+- Bases de datos: PostgreSQL 16, Redis 7, MongoDB Atlas
+- Message Queue: Apache Kafka, AWS SQS
+
+**Frontend:**
+- React 18 con TypeScript
+- Next.js 14 para aplicaciones full-stack
+- TailwindCSS + Shadcn/UI como sistema de diseño
+- Vite como bundler para proyectos nuevos
+
+**Infraestructura y DevOps:**
+- Cloud principal: AWS (con algunos servicios en GCP)
+- Contenedores: Docker + Kubernetes (EKS)
+- IaC: Terraform para toda la infraestructura
+- CI/CD: GitHub Actions + ArgoCD
+
+**Observabilidad:**
+- Logs: DataDog
+- APM: DataDog APM + Sentry para errores
+- Uptime y alertas: PagerDuty
+
+### 3.2 Repositorios y Control de Versiones
+
+TechCorp usa GitHub Enterprise. Todas las contribuciones siguen el flujo:
+
+1. **Branch desde main:** Crea una rama con el formato `feature/JIRA-123-descripcion` o `bugfix/JIRA-456-descripcion`
+2. **Commits convencionales:** Usa el estándar Conventional Commits (feat:, fix:, chore:, docs:, etc.)
+3. **Pull Request:** Abre un PR con descripción completa, capturas de pantalla si aplica, y enlaza el ticket de Jira
+4. **Code Review:** Mínimo 2 aprobaciones para merge a main; 1 de ellas debe ser del Tech Lead
+5. **Merge:** Solo merge squash. Después del merge, el CI/CD despliega automáticamente a staging
+
+**Reglas de ramas protegidas:**
+- `main` y `production` son ramas protegidas. Nunca se hace push directo.
+- Los hotfixes se crean desde `production` y se merge a ambas ramas.
+
+### 3.3 Configuración del Entorno Local
+
+Para configurar tu entorno de desarrollo:
+
+1. Instala Homebrew, Git, Docker Desktop y Node Version Manager (nvm)
+2. Clona el repositorio de bootstrap: `git clone git@github.com:techcorp/dev-setup.git`
+3. Ejecuta el script: `./setup.sh` (configura todo automáticamente)
+4. Las variables de entorno de desarrollo están en 1Password > vault "Dev Local"
+
+El proceso completo toma aproximadamente 30 minutos en una máquina nueva.
+
+---
+
+## SECCIÓN 4: SEGURIDAD INFORMÁTICA
+
+### 4.1 Política de Seguridad de Endpoints
+
+Todos los dispositivos corporativos deben:
+
+- Tener habilitado el cifrado de disco completo (FileVault en Mac)
+- Mantener el sistema operativo y aplicaciones actualizadas
+- Tener instalado y activo el agente de seguridad CrowdStrike Falcon
+- Bloquearse automáticamente después de 5 minutos de inactividad
+- Nunca conectarse a redes Wi-Fi públicas sin VPN activa
+
+### 4.2 Manejo de Datos Sensibles
+
+TechCorp clasifica los datos en 4 niveles:
+
+| Nivel | Categoría | Ejemplos | Almacenamiento |
+|---|---|---|---|
+| L1 | Público | Marketing, blog posts | Cualquier medio |
+| L2 | Interno | Documentación técnica | Solo sistemas internos |
+| L3 | Confidencial | Datos de clientes, código fuente | Cifrado obligatorio |
+| L4 | Restringido | Datos financieros, credenciales | Acceso mínimo necesario |
+
+Los datos de nivel L3 y L4 nunca pueden almacenarse en dispositivos personales, servicios externos no aprobados, o enviarse por canales no cifrados.
+
+### 4.3 Incidentes de Seguridad
+
+Si sospechas de un incidente de seguridad (phishing, malware, brecha de datos, acceso no autorizado):
+
+1. **No borres evidencia.** No cierres sesiones ni apagues el equipo.
+2. **Reporta inmediatamente:** security@techcorp.com o canal #security-incidents en Slack
+3. **Desconecta el equipo de la red** si el incidente está activo
+4. **Documenta** lo que viste: hora, descripción del comportamiento, capturas
+
+El tiempo de respuesta del equipo de Seguridad es de máximo 15 minutos en horario hábil y 30 minutos fuera de horario.
+
+---
+
+## SECCIÓN 5: SOPORTE TÉCNICO
+
+### 5.1 Canales de Soporte
+
+| Tipo de Problema | Canal | SLA |
+|---|---|---|
+| Urgente (producción caída) | PagerDuty + #p1-incidents | 15 minutos |
+| Alto (bloquea trabajo) | Canal #it-support en Slack | 2 horas |
+| Medio (afecta productividad) | Ticket en Jira | 1 día hábil |
+| Bajo (consultas, mejoras) | Ticket en Jira | 3 días hábiles |
+
+### 5.2 Portal de Self-Service
+
+Antes de abrir un ticket, verifica la base de conocimiento en it.techcorp.com/kb. Allí encontrarás guías para los problemas más comunes:
+
+- Restablecer contraseñas de sistemas internos
+- Conectar impresoras de oficina
+- Configurar el email en móvil
+- Solucionar problemas de VPN
+- Recuperar archivos borrados de Google Drive
+
+### 5.3 Soporte para Home Office
+
+Para problemas de conectividad en casa:
+
+- La empresa no es responsable de la conexión a internet del colaborador
+- Se recomienda un mínimo de 50 Mbps de bajada y 20 Mbps de subida
+- Si tienes problemas recurrentes, puedes solicitar un subsidio de mejora de internet (hasta USD 30/mes) a través de Facilities
+
+---
+
+*Base de conocimiento IT — Versión 2.4 — TechCorp*
+*Soporte: it-support@techcorp.com | Slack: #it-support | Ext. 3000*
